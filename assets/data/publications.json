@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-11",
- "source": "Google Scholar profiles of Drs. Rahimi, Mittal, Amiri Golilarz and Neupane, 2021 onward; journal and conference papers",
+ "source": "Google Scholar profiles of PATENT faculty, 2021 onward; journal and conference papers",
  "publications": [
   {
    "title": "AI Identification: An Integrated Framework for Sustainable Governance in Digital Enterprises",
@@ -22,10 +22,10 @@
    "type": "journal",
    "authors": "S Penchala, G Money, G Marques, S Wood, J Kirschman, T Atkison, ...",
    "venue": "Sensors 26 (7), 2083",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:kRWSkSYxWN8C",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:-jrNzM816MMC",
    "cites": 1,
    "faculty": [
-    "amiri",
+    "golilarz",
     "rahimi"
    ],
    "topics": [
@@ -41,10 +41,10 @@
    "type": "journal",
    "authors": "E Hossain, T Nuzhat, S Masum, S Rahimi, NA Golilarz",
    "venue": "Nature - Scientific Reports 16 (1), 6582",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:UxriW0iASnsC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:kWvqk_afx_IC",
    "cites": 1,
    "faculty": [
-    "amiri",
+    "golilarz",
     "rahimi"
    ],
    "topics": [
@@ -58,10 +58,10 @@
    "type": "journal",
    "authors": "NA Golilarz, HS Al Khatib, S Rahimi",
    "venue": "IEEE Access",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:CHSYGLWDkRkC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:MAUkC_7iAq8C",
    "cites": 11,
    "faculty": [
-    "amiri",
+    "golilarz",
     "rahimi"
    ],
    "topics": [
@@ -83,11 +83,12 @@
    ],
    "cites": 21,
    "faculty": [
-    "amiri",
+    "golilarz",
     "mittal",
     "rahimi"
    ],
-   "labs": []
+   "labs": [],
+   "curated": true
   },
   {
    "title": "ZIVIL: Zero-Shot Incremental Vision–Language Maps and Spatial Graph Representation of Construction Sites",
@@ -112,10 +113,10 @@
    "type": "conference",
    "authors": "K Pham, J Li, S Rahimi, NA Golilarz, A Perkins",
    "venue": "2026 25th International Conference on Machine Learning and Applications",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:HE397vMXCloC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:SIv7DqKytYAC",
    "cites": 0,
    "faculty": [
-    "amiri",
+    "golilarz",
     "rahimi"
    ],
    "topics": [
@@ -129,8 +130,8 @@
    "year": 2026,
    "type": "conference",
    "authors": "H Tripathi, S Neupane, S Mittal, S Rahimi, V Gupta",
-   "venue": "CAIS '26: Proceedings of the ACM Conference on AI and Agentic Systems, 738 - 754",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:7PzlFSSx8tAC",
+   "venue": "Proceedings of the ACM Conference on AI and Agentic Systems, 738-754",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:mUJArPsKIAAC",
    "cites": 6,
    "faculty": [
     "mittal",
@@ -173,15 +174,16 @@
     "mittal",
     "rahimi"
    ],
-   "labs": []
+   "labs": [],
+   "curated": true
   },
   {
    "title": "Agentra: A Supervisable Multi-Agent Framework for Enterprise Intrusion Response",
    "year": 2026,
    "type": "conference",
-   "authors": "R Patel, S Mitra, M Guida, S Iannucci, S Mittal, S Rahimi",
-   "venue": "2026 25th International Conference on Machine Learning and Applications",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:9Nmd_mFXekcC",
+   "authors": "R. Patel, S. Mitra, M. Guida, S. Iannucci, S. Mittal, S. Rahimi",
+   "venue": "ICMLA 2026",
+   "url": "https://arxiv.org/abs/2606.18325",
    "cites": 3,
    "faculty": [
     "mittal",
@@ -190,7 +192,9 @@
    "topics": [
     "security"
    ],
-   "labs": []
+   "labs": [],
+   "status": "Accepted",
+   "curated": true
   },
   {
    "title": "An Efficient and Interpretable Learning Approach for Large-Scale Histopathology Data",
@@ -214,10 +218,10 @@
    "type": "conference",
    "authors": "J Li, NA Golilarz, S Rahimi",
    "venue": "2026 25th International Conference on Machine Learning and Applications",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:Mojj43d5GZwC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:UmS_249rOGwC",
    "cites": 0,
    "faculty": [
-    "amiri",
+    "golilarz",
     "rahimi"
    ],
    "topics": [],
@@ -232,7 +236,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:PyEswDtIyv0C",
    "cites": 6,
    "faculty": [
-    "amiri",
+    "golilarz",
     "rahimi"
    ],
    "topics": [
@@ -251,7 +255,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:bnK-pcrLprsC",
    "cites": 0,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "cps"
@@ -259,6 +263,26 @@
    "labs": [
     "brains"
    ]
+  },
+  {
+   "title": "FALCON: Transforming Cyber Threat Intelligence into Deployable IDS Rules with Self-Reflection",
+   "year": 2026,
+   "type": "conference",
+   "authors": "S. Mitra, S. Neupane, M. Duclos, A. Piplai, S. Mittal, M. R. Rahman, E. Zieglar, S. Rahimi",
+   "venue": "IEEE CIC 2026",
+   "award": "Best Paper",
+   "url": "https://arxiv.org/abs/2508.18684",
+   "cites": 0,
+   "faculty": [
+    "mittal",
+    "neupane",
+    "rahimi"
+   ],
+   "topics": [
+    "security"
+   ],
+   "labs": [],
+   "curated": true
   },
   {
    "title": "Find Before You Fine-Tune: A Diagnostic Study of Small LLMs for Cybersecurity QA",
@@ -318,7 +342,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:p2g8aNsByqUC",
    "cites": 0,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "xai"
@@ -366,13 +390,13 @@
    "authors": "S Penchala, SR Kontham, P Bhattacharjee, N PMahmoodi, D Fonseca, ...",
    "venue": "International Congress on Information and Communication Technology, 332-346",
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:1Ye0OR6EYb4C",
-   "topics": [
-    "vision"
-   ],
    "cites": 7,
    "faculty": [
-    "amiri",
+    "golilarz",
     "rahimi"
+   ],
+   "topics": [
+    "vision"
    ],
    "labs": [
     "brains"
@@ -387,7 +411,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:AXPGKjj_ei8C",
    "cites": 0,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [],
    "labs": [
@@ -411,7 +435,8 @@
     "mittal",
     "rahimi"
    ],
-   "labs": []
+   "labs": [],
+   "curated": true
   },
   {
    "title": "Surformer v2: A multimodal classifier for surface understanding from touch and vision",
@@ -422,7 +447,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:b0M2c_1WBrUC",
    "cites": 3,
    "faculty": [
-    "amiri",
+    "golilarz",
     "rahimi"
    ],
    "topics": [
@@ -436,7 +461,7 @@
    "title": "The Value of Spike Timing: A Leakage-Resistant Benchmark of SNN Design Choices for Network Intrusion Detection",
    "year": 2026,
    "type": "conference",
-   "authors": "R. Patel, S. Mitra, D. Amebley, T. Akinrele, S. Dibbo, S. Mittal, S. Rahimi",
+   "authors": "R. Patel, S. Mitra, D. Amebley, T. Akinrele, S. Dibbo, S. Rahimi",
    "venue": "IEEE CogMI 2026",
    "award": "Best Student Paper",
    "url": "https://arxiv.org/abs/2606.01442",
@@ -445,10 +470,10 @@
    ],
    "cites": 0,
    "faculty": [
-    "mittal",
     "rahimi"
    ],
-   "labs": []
+   "labs": [],
+   "curated": true
   },
   {
    "title": "Toward Neurocognitive Intelligence for Assistive Humanoid Robots in Geriatric Care",
@@ -456,10 +481,10 @@
    "type": "conference",
    "authors": "NA Golilarz, J Li, S Rahimi, A Perkins",
    "venue": "Annals of Computer Science and Information Systems 48, 57-64",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:olpn-zPbct0C",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:silx2ntsSuwC",
    "cites": 0,
    "faculty": [
-    "amiri",
+    "golilarz",
     "rahimi"
    ],
    "topics": [
@@ -477,7 +502,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:WA5NYHcadZ8C",
    "cites": 0,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "cps",
@@ -496,7 +521,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:08ZZubdj9fEC",
    "cites": 3,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "vision"
@@ -522,7 +547,8 @@
     "neupane",
     "rahimi"
    ],
-   "labs": []
+   "labs": [],
+   "curated": true
   },
   {
    "title": "A hybrid approach for pattern recognition and interpretation in age-related false memory",
@@ -530,10 +556,10 @@
    "type": "journal",
    "authors": "NA Golilarz, E Hossain, S Rahimi, H Karimi",
    "venue": "Frontiers in Psychology 16, 1579259",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:pyW8ca7W8N0C",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:Ade32sEp0pkC",
    "cites": 0,
    "faculty": [
-    "amiri",
+    "golilarz",
     "rahimi"
    ],
    "topics": [],
@@ -548,7 +574,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:dshw04ExmUIC",
    "cites": 10,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [],
    "labs": [
@@ -561,10 +587,10 @@
    "type": "journal",
    "authors": "S Neupane, S Mitra, S Mittal, M Gaur, NA Golilarz, S Rahimi, A Amirlatifi",
    "venue": "ACM Transactions on Computing for Healthcare 6 (2), 1-19",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:WF5omc3nYNoC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:otzGkya1bYkC",
    "cites": 43,
    "faculty": [
-    "amiri",
+    "golilarz",
     "mittal",
     "neupane",
     "rahimi"
@@ -583,7 +609,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:4fKUyHm3Qg0C",
    "cites": 1,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [],
    "labs": [
@@ -596,10 +622,10 @@
    "type": "journal",
    "authors": "M Kansana, E Hossain, S Rahimi, N Amiri Golilarz",
    "venue": "Information 16 (10), 839",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:_xSYboBqXhAC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:jFemdcug13IC",
    "cites": 6,
    "faculty": [
-    "amiri",
+    "golilarz",
     "rahimi"
    ],
    "topics": [
@@ -615,7 +641,7 @@
    "type": "conference",
    "authors": "J Keith, A Amirlatifi, S Mittal, S Neupane, H Tripathi, S Rahimi",
    "venue": "2025 AIChE Annual Meeting",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:isC4tDSrTZIC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:QsaTk4IG4EwC",
    "cites": 0,
    "faculty": [
     "mittal",
@@ -631,10 +657,10 @@
    "type": "conference",
    "authors": "K Pham, S Penchala, HS Al Khatib, NA Golilarz, S Neupane, S Mittal, ...",
    "venue": "IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI’25)",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:Zph67rFs4hoC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:Fu2w8maKXqMC",
    "cites": 0,
    "faculty": [
-    "amiri",
+    "golilarz",
     "mittal",
     "neupane"
    ],
@@ -664,7 +690,7 @@
    "type": "conference",
    "authors": "JM Keith, A Amirlatifi, S Mittal, S Neupane, H TRIPATHI",
    "venue": "2025 ASEE Annual Conference & Exposition",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:qxL8FJ1GzNcC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:ZfRJV9d4-WMC",
    "cites": 2,
    "faculty": [
     "mittal",
@@ -682,7 +708,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:yD5IFk8b50cC",
    "cites": 2,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "security"
@@ -757,9 +783,9 @@
    "title": "IRSDA: An Agent-Orchestrated Framework for Enterprise Intrusion Response",
    "year": 2025,
    "type": "conference",
-   "authors": "D Panigrahi, R Patel, S Mitra, S Mittal, S Rahimi",
-   "venue": "IEEE Big Data 2025",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:2KloaMYe4IUC",
+   "authors": "D. Panigrahi, R. Patel, S. Mitra, S. Mittal, S. Rahimi",
+   "venue": "IEEE BigData 2025",
+   "url": "https://doi.org/10.1109/BigData66926.2025.11402393",
    "cites": 2,
    "faculty": [
     "mittal",
@@ -768,25 +794,27 @@
    "topics": [
     "security"
    ],
-   "labs": []
+   "labs": [],
+   "curated": true
   },
   {
    "title": "LLMZ+: Contextual Prompt Whitelist Principles for Agentic LLMs",
    "year": 2025,
    "type": "conference",
-   "authors": "T Pawelek, R Patel, C Crowell, N Amiri, S Mittal, S Rahimi, A Perkins",
-   "venue": "24th IEEE International Conference on Machine Learning and Applications",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:tzM49s52ZIMC",
+   "authors": "T. Pawelek, R. Patel, C. Crowell, N. Amiri Golilarz, S. Mittal, S. Rahimi, A. Perkins",
+   "venue": "ICMLA 2025",
+   "url": "https://doi.org/10.1109/ICMLA66185.2025.00213",
    "cites": 5,
    "faculty": [
-    "amiri",
+    "golilarz",
     "mittal",
     "rahimi"
    ],
    "topics": [
     "security"
    ],
-   "labs": []
+   "labs": [],
+   "curated": true
   },
   {
    "title": "ModelForge: Using GenAI to Improve the Development of Security Protocols",
@@ -808,16 +836,17 @@
    "title": "Navigating MLOps: Insights into Maturity, Lifecycle, Tools, and Careers",
    "year": 2025,
    "type": "conference",
-   "authors": "J Stone, R Patel, F Ghiasi, S Mittal, S Rahimi",
-   "venue": "IEEE Conference on Artificial Intelligence (IEEE CAI) 2025",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:N5tVd3kTz84C",
+   "authors": "J. Stone, R. Patel, F. Ghiasi, S. Mittal, S. Rahimi",
+   "venue": "IEEE CAI 2025",
+   "url": "https://doi.org/10.1109/CAI64502.2025.00118",
    "cites": 25,
    "faculty": [
     "mittal",
     "rahimi"
    ],
    "topics": [],
-   "labs": []
+   "labs": [],
+   "curated": true
   },
   {
    "title": "Predicting Vibration-Induced Membrane Injury in HeLa Cells via Integrated Finite Element and Machine Learning Modeling",
@@ -828,7 +857,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:u9iWguZQMMsC",
    "cites": 0,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [],
    "labs": [
@@ -887,7 +916,7 @@
    "type": "conference",
    "authors": "S Neupane, S Mitra, IA Fernandez, S Mittal, S Rahimi",
    "venue": "2025 IEEE Conference on Artificial Intelligence (CAI), 1070-1077",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:zYLM7Y9cAGgC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:gVv57TyPmFsC",
    "cites": 13,
    "faculty": [
     "mittal",
@@ -955,7 +984,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:3s1wT3WcHBgC",
    "cites": 1,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "healthcare",
@@ -970,14 +999,14 @@
    "authors": "L Cummins, A Sommers, SB Ramezani, S Mittal, J Jabour, M Seale, ...",
    "venue": "IEEE Access 12, 57574-57602",
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:uDGL6kOW6j0C",
-   "topics": [
-    "cps",
-    "xai"
-   ],
    "cites": 224,
    "faculty": [
     "mittal",
     "rahimi"
+   ],
+   "topics": [
+    "cps",
+    "xai"
    ],
    "labs": []
   },
@@ -1004,16 +1033,16 @@
    "authors": "HS Al Khatib, S Neupane, H Kumar Manchukonda, NA Golilarz, S Mittal, ...",
    "venue": "Frontiers in Artificial Intelligence 7, 1388479",
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:wMgC3FpKEyYC",
-   "topics": [
-    "healthcare",
-    "xai"
-   ],
    "cites": 65,
    "faculty": [
-    "amiri",
+    "golilarz",
     "mittal",
     "neupane",
     "rahimi"
+   ],
+   "topics": [
+    "healthcare",
+    "xai"
    ],
    "labs": []
   },
@@ -1024,25 +1053,25 @@
    "authors": "S Neupane, S Mitra, IA Fernandez, S Saha, S Mittal, J Chen, N Pillai, ...",
    "venue": "IEEE Access 12, 22072-22097",
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:6yz0xqPARnAC",
-   "topics": [
-    "security",
-    "cps"
-   ],
    "cites": 125,
    "faculty": [
     "mittal",
     "neupane",
     "rahimi"
    ],
+   "topics": [
+    "security",
+    "cps"
+   ],
    "labs": []
   },
   {
-   "title": "A Survey of Transformer Enabled Time Series Synthesis",
+   "title": "A survey of transformer enabled time series synthesis",
    "year": 2024,
    "type": "conference",
    "authors": "A Sommers, L Cummins, S Mittal, S Rahimi, M Seale, J Jaboure, T Arnold",
-   "venue": "IEEE 10th International Conference on Collaboration and Internet Computing",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:wbdj-CoPYUoC",
+   "venue": "2024 IEEE 10th International Conference on Collaboration and Internet",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:jgBuDB5drN8C",
    "cites": 16,
    "faculty": [
     "mittal",
@@ -1058,15 +1087,15 @@
    "authors": "IA Fernandez, S Neupane, T Chakraborty, S Mitra, S Mittal, N Pillai, ...",
    "venue": "2024 IEEE 10th International Conference on Collaboration and Internet",
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:43bX7VzcjpAC",
-   "topics": [
-    "security",
-    "cps"
-   ],
    "cites": 17,
    "faculty": [
     "mittal",
     "neupane",
     "rahimi"
+   ],
+   "topics": [
+    "security",
+    "cps"
    ],
    "labs": []
   },
@@ -1077,12 +1106,12 @@
    "authors": "A Russell-Gilbert, A Sommers, A Thompson, L Cummins, S Mittal, ...",
    "venue": "2024 IEEE International Conference on Big Data (BigData), 4194-4203",
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:MhiOAD_qIWkC",
-   "topics": [],
    "cites": 62,
    "faculty": [
     "mittal",
     "rahimi"
    ],
+   "topics": [],
    "labs": []
   },
   {
@@ -1091,7 +1120,7 @@
    "type": "conference",
    "authors": "JM Keith, A Amirlatifi, S Rahimi, S Neupane, S Mittal",
    "venue": "2024 ASEE Annual Conference & Exposition",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:LkGwnXOMwfcC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:U4n9YNQMCAIC",
    "cites": 5,
    "faculty": [
     "mittal",
@@ -1108,14 +1137,14 @@
    "authors": "S Neupane, H Tripathi, S Mitra, S Bozorgzad, S Mittal, S Rahimi, ...",
    "venue": "2024 IEEE International Conference on Big Data (BigData), 5050-5059",
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:7wO8s98CvbsC",
-   "topics": [
-    "healthcare"
-   ],
    "cites": 23,
    "faculty": [
     "mittal",
     "neupane",
     "rahimi"
+   ],
+   "topics": [
+    "healthcare"
    ],
    "labs": []
   },
@@ -1141,7 +1170,7 @@
    "type": "conference",
    "authors": "J Ables, T Kirby, W Anderson, S Mittal, S Rahimi, I Banicescu, M Seale, ...",
    "venue": "2024 IEEE 10th International Conference on Collaboration and Internet",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:eq2jaN3J8jMC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:PYBJJbyH-FwC",
    "cites": 3,
    "faculty": [
     "mittal",
@@ -1154,12 +1183,12 @@
    "labs": []
   },
   {
-   "title": "Explainable Anomaly Detection: Counterfactual driven What-If Analysis",
+   "title": "Explainable anomaly detection: Counterfactual driven what-if analysis",
    "year": 2024,
    "type": "conference",
-   "authors": "L Cummins, A Sommers, S Mittal, S Rahimi, M Seale, J Jaboure, T Arnold",
-   "venue": "IEEE CogMI 2024",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:olpn-zPbct0C",
+   "authors": "L Cummins, A Sommers, S Mittal, S Rahimi, M Seale, J Jabour, T Arnold",
+   "venue": "2024 IEEE 6th International Conference on Cognitive Machine Intelligence",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:v1_lew4L6wgC",
    "cites": 13,
    "faculty": [
     "mittal",
@@ -1177,14 +1206,14 @@
    "authors": "S Neupane, E Hossain, J Keith, H Tripathi, F Ghiasi, NA Golilarz, ...",
    "venue": "2024 IEEE Frontiers in Education Conference (FIE), 1-9",
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:ubry08Y2EpUC",
-   "topics": [],
    "cites": 80,
    "faculty": [
-    "amiri",
+    "golilarz",
     "mittal",
     "neupane",
     "rahimi"
    ],
+   "topics": [],
    "labs": []
   },
   {
@@ -1193,7 +1222,7 @@
    "type": "conference",
    "authors": "A Sommers, SB Ramezani, L Cummins, S Mittal, S Rahimi, M Seale, ...",
    "venue": "2024 IEEE 10th World Forum on Internet of Things (WF-IoT), 1-7",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:kRWSkSYxWN8C",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:ALROH1vI_8AC",
    "cites": 2,
    "faculty": [
     "mittal",
@@ -1214,7 +1243,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:WbkHhVStYXYC",
    "cites": 0,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "vision"
@@ -1226,8 +1255,8 @@
    "year": 2024,
    "type": "conference",
    "authors": "D Panigrahi, S Mitra, S Neupane, S Mittal, BA Blakely",
-   "venue": "2024 IEEE International Conference on Big Data (BigData)",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:UebtZRa9Y70C",
+   "venue": "IEEE Big Data 2024",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:JoZmwDi-zQgC",
    "cites": 4,
    "faculty": [
     "mittal",
@@ -1244,8 +1273,8 @@
    "year": 2024,
    "type": "conference",
    "authors": "HS Al Khatib, S Neupane, S Mitra, H Tripathi, S Mittal, S Rahimi, ...",
-   "venue": "AAAI 2024 Fall Symposium Series : Large Language Models for Knowledge Graph",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:roLk4NBRz8UC",
+   "venue": "AAAI Fall Symposium 2024",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:t6usbXjVLHcC",
    "cites": 2,
    "faculty": [
     "mittal",
@@ -1265,13 +1294,13 @@
    "authors": "W Anderson, J Ables, S Mittal, S Rahimi, I Banicescu, T Arnold, J Church, ...",
    "venue": "International Conference on Computational Science and Computational",
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:6_hjMsCP8ZoC",
-   "topics": [
-    "security"
-   ],
    "cites": 0,
    "faculty": [
     "mittal",
     "rahimi"
+   ],
+   "topics": [
+    "security"
    ],
    "labs": []
   },
@@ -1300,13 +1329,13 @@
    "authors": "A Thompson, A Sommers, A Russell-Gilbert, L Cummins, S Mittal, ...",
    "venue": "2024 IEEE International Conference on Big Data (BigData), 4240-4247",
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:WHdLCjDvYFkC",
-   "topics": [
-    "cps"
-   ],
    "cites": 7,
    "faculty": [
     "mittal",
     "rahimi"
+   ],
+   "topics": [
+    "cps"
    ],
    "labs": []
   },
@@ -1315,8 +1344,8 @@
    "year": 2024,
    "type": "conference",
    "authors": "IA Fernandez, S Neupane, S Mittal, S Rahimi",
-   "venue": "Annual Computer Security Applications Conference (ACSAC) -2024",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:0EnyYjriUFMC",
+   "venue": "ACM ACSAC 2024",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:9vf0nzSNQJEC",
    "cites": 5,
    "faculty": [
     "mittal",
@@ -1351,7 +1380,7 @@
    "type": "conference",
    "authors": "DK Gao, S Mittal, J Wu, H Du, J Chen, S Rahimi",
    "venue": "2024 International Conference on Sustainable Technology and Engineering",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:ye4kPcJQO24C",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:-mN3Mh-tlDkC",
    "cites": 1,
    "faculty": [
     "mittal",
@@ -1476,7 +1505,7 @@
    "type": "conference",
    "authors": "N Cummins, B Killen, SB Ramezani, S Rahimi, M Seale, S Mittal",
    "venue": "The International FLAIRS Conference Proceedings 36",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:WbkHhVStYXYC",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:BJbdYPG6LGMC",
    "cites": 1,
    "faculty": [
     "mittal",
@@ -1648,7 +1677,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:35N4QoGY0k4C",
    "cites": 32,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [],
    "labs": []
@@ -1673,9 +1702,9 @@
    "title": "Explainable Intrusion Detection Systems (X-IDS): A Survey of Current Methods, Challenges, and Opportunities",
    "year": 2022,
    "type": "journal",
-   "authors": "S Neupane, J Ables, W Anderson, S Mittal, S Rahimi",
-   "venue": "IEEE Access 2022",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:u-x6o8ySG0sC",
+   "authors": "S NEUPANE, S ABLES, JESSE, ANDERSON, WILLIAM, MITTAL, ...",
+   "venue": "IEEE Access",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:mNrWkgRL2YcC",
    "cites": 430,
    "faculty": [
     "mittal",
@@ -1713,7 +1742,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:M05iB0D1s5AC",
    "cites": 1,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [],
    "labs": []
@@ -1771,7 +1800,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:GnPB-g6toBAC",
    "cites": 7,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "security",
@@ -1780,12 +1809,12 @@
    "labs": []
   },
   {
-   "title": "A Temporal Anomaly Detection System for Vehicles utilizing Functional Working Groups and Sensor Channels",
+   "title": "A temporal anomaly detection system for vehicles utilizing functional working groups and sensor channels",
    "year": 2022,
    "type": "conference",
    "authors": "S Neupane, IA Fernandez, W Patterson, S Mittal, S Rahimi",
-   "venue": "IEEE International Conference on Collaboration and Internet Computing 2022",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:d1gkVwhDpl0C",
+   "venue": "2022 IEEE 8th International Conference on Collaboration and Internet",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:P7Ujq4OLJYoC",
    "cites": 19,
    "faculty": [
     "mittal",
@@ -1803,7 +1832,7 @@
    "type": "conference",
    "authors": "W Patterson, I Fernandez, S Neupane, M Parmar, S Mittal, S Rahimi",
    "venue": "ACM ACSAC '22: Annual Computer Security Applications Conference",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:IjCSPb-OGe4C",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:dshw04ExmUIC",
    "cites": 6,
    "faculty": [
     "mittal",
@@ -1941,7 +1970,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:JV2RwH3_ST0C",
    "cites": 67,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [],
    "labs": []
@@ -1969,7 +1998,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:J_g5lzvAfSwC",
    "cites": 614,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "healthcare"
@@ -1985,7 +2014,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:RYcK_YlVTxYC",
    "cites": 179,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "cps"
@@ -2001,7 +2030,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:ldfaerwXgEUC",
    "cites": 34,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "security",
@@ -2035,7 +2064,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:NaGl4SEjCO4C",
    "cites": 107,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [],
    "labs": []
@@ -2049,7 +2078,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:YOwf2qJgpHMC",
    "cites": 171,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [],
    "labs": []
@@ -2063,7 +2092,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:70eg2SAEIzsC",
    "cites": 43,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [],
    "labs": []
@@ -2077,7 +2106,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:K3LRdlH-MEoC",
    "cites": 69,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [],
    "labs": []
@@ -2091,7 +2120,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:dhFuZR0502QC",
    "cites": 36,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "vision"
@@ -2354,7 +2383,7 @@
    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:RGFaLdJalmkC",
    "cites": 19,
    "faculty": [
-    "amiri"
+    "golilarz"
    ],
    "topics": [
     "cps"

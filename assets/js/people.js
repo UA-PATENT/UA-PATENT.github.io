@@ -45,7 +45,8 @@
       .filter(function (k) { return p[k]; })
       .map(function (k) { return link(k, p[k], p.name); }).join('');
     var lab = p.lab && LABS[p.lab] ? '<a class="lab-tag" href="' + LABS[p.lab].href + '">' + LABS[p.lab].name + '</a>' : '';
-    var m = p.metrics && metrics[p.metrics];
+    var sid = /user=([\w-]+)/.exec(p.scholar || '');
+    var m = sid && metrics[sid[1]];
     var stats = m ? '<p class="person__stats" title="Google Scholar, all time"><span><b>' + fmt(m.citations) + '</b> citations</span><span><b>' + m.hIndex + '</b> h-index</span></p>' : '';
     return '<li class="person reveal" style="--d:' + (i % 4) * 0.06 + 's">' +
       portrait(p, i < 4) +
@@ -65,7 +66,7 @@
   ])
     .then(function (res) {
       var data = res[0];
-      metrics = res[1].faculty || {};
+      metrics = res[1].people || {};
       var html = data.groups.map(function (g) {
         var members = data.people.filter(function (p) { return p.group === g.id; });
         if (!members.length) return '';

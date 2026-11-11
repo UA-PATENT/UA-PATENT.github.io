@@ -83,10 +83,34 @@ Edit [`assets/data/publications.json`](assets/data/publications.json). The list 
 
 **What's included:** journal and conference papers from 2021 onward on the Google Scholar profiles of Drs. Rahimi, Mittal, Amiri Golilarz, and Neupane, with duplicate versions merged. Preprints, theses, books, patents, and grant records are left out.
 
-### Metrics and highlights
+### Weekly Google Scholar sync
 
-- [`assets/data/metrics.json`](assets/data/metrics.json) holds each faculty member's Scholar citations, h-index, and i10-index, plus lab totals: publications, citations to those papers, journal and conference counts, and BRAINS papers. Update it when you refresh the publication list.
-- [`assets/data/highlights.json`](assets/data/highlights.json) lists the most-cited papers shown as poster cards on the home and Publications pages. `match` is the beginning of the paper's title in `publications.json`, which is where the citation count comes from. The figures in `assets/img/highlights/` come from each paper's arXiv version.
+[`scripts/sync_scholar.py`](scripts/sync_scholar.py) refreshes everything that comes from Google Scholar. The [Weekly Google Scholar sync](.github/workflows/scholar-sync.yml) workflow runs it every Monday, and you can also start it from the Actions tab with **Run workflow**.
+
+- Everyone in `people.json` with a `scholar` link gets citations, h-index, and i10-index in `metrics.json`. These appear on their People card. To add someone, add their Scholar link.
+- Faculty profiles supply `publications.json`: journal and conference papers since `start_year` in [`scripts/scholar_config.json`](scripts/scholar_config.json), with copies of the same paper merged.
+- Entries marked `"curated": true` are kept as written. Use this for papers with verified details, awards, or a DOI.
+- If Google Scholar blocks the runner, the script tries [SerpAPI](https://serpapi.com) when a `SERPAPI_KEY` repository secret is set. Otherwise it keeps last week's copy in `scripts/cache/`, so a blocked run never wipes data.
+- To run it locally: `python3 scripts/sync_scholar.py`. Add `--offline` to rebuild from the cache without any network requests.
+
+### Highlights, awards, and posters
+
+- [`assets/data/highlights.json`](assets/data/highlights.json) lists the most-cited papers shown as poster cards. `match` is the beginning of the paper's title in `publications.json`. The figures in `assets/img/highlights/` come from each paper's arXiv version.
+- Award certificates: images are in `assets/img/awards/` and the original PDFs in `assets/docs/awards/`. The cards are written into `index.html` and `publications.html`.
+- **Posters:** add an entry to [`assets/data/posters.json`](assets/data/posters.json). Put a portrait image, about 1200px wide, in `assets/img/posters/`, and optionally the PDF in `assets/docs/posters/`:
+
+  ```json
+  { "title": "Poster title", "authors": "R. Patel, S. Mittal", "event": "IEEE CogMI", "year": 2026,
+    "image": "assets/img/posters/cogmi-2026.jpg", "pdf": "assets/docs/posters/cogmi-2026.pdf" }
+  ```
+
+  The Posters section on the Publications page stays hidden until the list has at least one entry.
+
+### Contact form
+
+The form on `contact.html` sends messages to **cs-patent@ua.edu** through [FormSubmit](https://formsubmit.co), because GitHub Pages can't send email itself.
+
+**One-time activation:** the first message sent through the form triggers a FormSubmit email to cs-patent@ua.edu. Click **Activate Form** in it. Until then, visitors see a link that opens a pre-filled email instead. After activating, you can replace the address with FormSubmit's random alias: set `data-endpoint="https://formsubmit.co/ajax/<alias>"` on the form.
 
 ## Pages
 
@@ -97,7 +121,7 @@ Edit [`assets/data/publications.json`](assets/data/publications.json). The list 
 | `people.html` | Team (rendered from `people.json`) |
 | `publications.html` | Searchable publications (rendered from `publications.json`) |
 | `about.html` | History of the lab at MSU and UA, funders |
-| `contact.html` | Contact details and how to join |
+| `contact.html` | Contact details, contact form, and how to join |
 | `404.html` | Not-found page (uses root-relative links) |
 
 Every page repeats the same navigation and footer. If you change one, update all of them.
@@ -105,6 +129,8 @@ Every page repeats the same navigation and footer. If you change one, update all
 ## Design notes
 
 - Styles live in `assets/css/style.css`. Colors are design tokens at the top, with dark and light themes.
+- Brand colors are UA Crimson `#9E1B32` and UA Gray `#828A8F`. Logo files are in `assets/img/logo/`: `patent-mark.svg` (app-icon mark), plus `patent-lockup-light.svg` and `patent-lockup-dark.svg`, the full logo for light and dark backgrounds. These are the lab's own mark; they don't use UA's trademarked logos.
+- The research simulations live in `assets/js/sims.js`. Any element with `data-sim="security|healthcare|cps|vision|training"` gets a canvas. The SVG inside it is the fallback. `data-compact` hides the text overlays.
 - Motion follows the scroll position, using CSS scroll-driven animations where the browser supports them and a small JavaScript fallback elsewhere. It animates only `opacity` and `transform`.
 - If the visitor's system asks for reduced motion, all motion is turned off.
 - Lab at Mississippi State: <https://patent.cse.msstate.edu>

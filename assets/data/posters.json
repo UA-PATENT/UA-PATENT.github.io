@@ -1,0 +1,4 @@
+{
+ "note": "Posters shown on the Publications page. Add the image (portrait, ~1200px wide JPG or WebP) to assets/img/posters/ and, optionally, the PDF to assets/docs/posters/. The section stays hidden while this list is empty.",
+ "posters": []
+}

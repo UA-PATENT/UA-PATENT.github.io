@@ -11,17 +11,21 @@
 <meta property="og:site_name" content="PATENT Lab">
 <meta property="og:title" content="PATENT Lab · The University of Alabama">
 <meta property="og:description" content="PATENT Lab at The University of Alabama builds explainable, data-driven AI for healthcare, cybersecurity, robotics, and computer vision.">
+<meta property="og:image" content="https://ua-patent.github.io/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/css/style.css">
 <script>(function(){var d=document.documentElement,t;d.className=d.className.replace('no-js','js');try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';d.setAttribute('data-theme',t)})();</script>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/highlights.js" defer></script>
+<script src="assets/js/sims.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav">
   <div class="nav__inner wrap">
-    <a class="brand" href="./" aria-label="PATENT Lab home"><svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#9e1b32"/><path d="M11 24V8h6.5a5 5 0 0 1 0 10H11" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="23.5" r="2.2" fill="#fff"/></svg>PATENT<small>Lab · UA</small></a>
+    <a class="brand" href="./" aria-label="PATENT Lab home"><svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="pgnav" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b8243e"/><stop offset="1" stop-color="#7a1426"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#pgnav)"/><path d="M21 49V15h13.5a10.5 10.5 0 0 1 0 21H21" fill="none" stroke="#fff" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M36.5 38.5 45 47" fill="none" stroke="#c9ced1" stroke-width="2.4" stroke-linecap="round" stroke-dasharray=".5 4.6"/><g fill="#fff"><circle cx="21" cy="15" r="4.6"/><circle cx="45" cy="25.5" r="4.6"/><circle cx="21" cy="49" r="4.6"/></g><g fill="#9e1b32"><circle cx="21" cy="15" r="1.8"/><circle cx="45" cy="25.5" r="1.8"/><circle cx="21" cy="49" r="1.8"/></g><circle cx="47.6" cy="49.6" r="4.6" fill="none" stroke="#c9ced1" stroke-width="2.4"/></svg>PATENT<small>Lab · UA</small></a>
     <nav aria-label="Primary"><ul class="nav__links" id="nav-links"><li><a href="research.html">Research</a></li><li><a href="people.html">People</a></li><li><a href="publications.html">Publications</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
     <div class="nav__actions">
       <button class="icon-toggle" type="button" data-theme-toggle aria-label="Switch theme"><svg class="icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg><svg class="icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7Z"/></svg></button>
@@ -42,7 +46,7 @@
         <div class="hero__content">
           <p class="hero__tag">Explainable AI for health, security, and intelligent machines.</p>
           <div class="btns">
-            <a class="btn btn--primary" href="research.html">Explore our research</a>
+            <a class="btn btn--crimson" href="research.html">Explore our research</a>
             <a class="btn btn--ghost" href="people.html">Meet the team</a>
           </div>
         </div>
@@ -57,10 +61,10 @@
       <h2 id="mission" class="sr-only">Our mission</h2>
       <p class="statement"><span class="statement__fill">At PATENT, we build <em>explainable, data-driven AI</em> for healthcare, cybersecurity, robotics, and computer vision, turning complex data into predictions people can trust and act on.</span></p>
       <dl class="stats">
-        <div class="stat reveal"><dt>Publications since 2021</dt><dd data-count-pubs>147</dd></div>
+        <div class="stat reveal"><dt>Publications since 2021</dt><dd data-count-pubs>148</dd></div>
         <div class="stat reveal" style="--d:.06s"><dt>Citations to those papers</dt><dd data-count-citations>4,256</dd></div>
         <div class="stat reveal" style="--d:.12s"><dt>Lab members</dt><dd data-count-members>12</dd></div>
-        <div class="stat reveal" style="--d:.18s"><dt>Best Student Paper awards in 2026</dt><dd data-count="2">2</dd></div>
+        <div class="stat reveal" style="--d:.18s"><dt>Paper awards in 2026</dt><dd data-count="3">3</dd></div>
       </dl>
     </div>
   </section>
@@ -73,28 +77,28 @@
       </div>
       <div class="bento">
         <a class="tile tile--wide reveal" href="research.html#security">
-          <div class="tile__art"><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="draw" style="--len:520" d="M100 18 166 42v52c0 44-28 76-66 88-38-12-66-44-66-88V42Z"/><path class="draw" style="--len:400" opacity=".45" d="M100 42 144 58v38c0 30-18 52-44 62-26-10-44-32-44-62V58Z"/><path class="draw" style="--len:110" stroke-width="3.2" d="m80 100 14 14 28-30"/><g fill="currentColor" stroke="none" opacity=".5"><circle cx="20" cy="150" r="2"/><circle cx="34" cy="166" r="2"/><circle cx="180" cy="150" r="2"/><circle cx="168" cy="168" r="2"/><circle cx="186" cy="128" r="2"/><circle cx="14" cy="126" r="2"/></g></svg></div>
+          <div class="tile__art sim" data-compact data-sim="security" data-label="Simulation: packets flow through an intrusion detection system; attacks are blocked with an explanation of the features behind each alert."><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="draw" style="--len:520" d="M100 18 166 42v52c0 44-28 76-66 88-38-12-66-44-66-88V42Z"/><path class="draw" style="--len:400" opacity=".45" d="M100 42 144 58v38c0 30-18 52-44 62-26-10-44-32-44-62V58Z"/><path class="draw" style="--len:110" stroke-width="3.2" d="m80 100 14 14 28-30"/><g fill="currentColor" stroke="none" opacity=".5"><circle cx="20" cy="150" r="2"/><circle cx="34" cy="166" r="2"/><circle cx="180" cy="150" r="2"/><circle cx="168" cy="168" r="2"/><circle cx="186" cy="128" r="2"/><circle cx="14" cy="126" r="2"/></g></svg></div>
           <span class="eyebrow">01</span>
           <h3>Cybersecurity</h3>
           <p>Explainable intrusion detection, agentic AI for incident response, threat intelligence, and securing the machine-learning pipeline itself.</p>
           <span class="link-arrow">Explore</span>
         </a>
         <a class="tile tile--narrow reveal" style="--d:.08s" href="research.html#healthcare">
-          <div class="tile__art"><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="draw" style="--len:380" d="M6 112h46l12-30 16 62 18-96 16 82 10-18h70"/><circle class="pulse-dot" cx="188" cy="112" r="5" fill="currentColor" stroke="none"/><path opacity=".3" d="M6 150h188M6 74h188"/></svg></div>
+          <div class="tile__art sim" data-compact data-sim="healthcare" data-label="Simulation: a live ECG trace; irregular heartbeats are flagged and raise a risk score."><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="draw" style="--len:380" d="M6 112h46l12-30 16 62 18-96 16 82 10-18h70"/><circle class="pulse-dot" cx="188" cy="112" r="5" fill="currentColor" stroke="none"/><path opacity=".3" d="M6 150h188M6 74h188"/></svg></div>
           <span class="eyebrow">02</span>
           <h3>Healthcare</h3>
           <p>Patient-centric knowledge graphs, clinical language models, and interpretable risk prediction.</p>
           <span class="link-arrow">Explore</span>
         </a>
         <a class="tile tile--half reveal" href="research.html#cps">
-          <div class="tile__art"><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="draw" style="--len:420" d="M30 160 70 110l50 20 50-80"/><path class="draw" style="--len:300" opacity=".45" d="M70 110 60 50l60-10 50 10M120 130l10 40"/><g fill="currentColor" stroke="none"><circle cx="30" cy="160" r="6"/><circle cx="70" cy="110" r="6"/><circle cx="120" cy="130" r="6"/><circle class="pulse-dot" cx="170" cy="50" r="7"/><circle cx="60" cy="50" r="4" opacity=".6"/><circle cx="120" cy="40" r="4" opacity=".6"/><circle cx="130" cy="170" r="4" opacity=".6"/></g></svg></div>
+          <div class="tile__art sim" data-compact data-sim="cps" data-label="Simulation: a robot plans a path with the A-star algorithm and replans when an obstacle appears."><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="draw" style="--len:420" d="M30 160 70 110l50 20 50-80"/><path class="draw" style="--len:300" opacity=".45" d="M70 110 60 50l60-10 50 10M120 130l10 40"/><g fill="currentColor" stroke="none"><circle cx="30" cy="160" r="6"/><circle cx="70" cy="110" r="6"/><circle cx="120" cy="130" r="6"/><circle class="pulse-dot" cx="170" cy="50" r="7"/><circle cx="60" cy="50" r="4" opacity=".6"/><circle cx="120" cy="40" r="4" opacity=".6"/><circle cx="130" cy="170" r="4" opacity=".6"/></g></svg></div>
           <span class="eyebrow">03</span>
           <h3>Robotics &amp; Cyber-Physical Systems</h3>
           <p>Predictive maintenance, digital twins, and autonomy in unstructured, off-road environments.</p>
           <span class="link-arrow">Explore</span>
         </a>
         <a class="tile tile--half reveal" style="--d:.08s" href="research.html#vision">
-          <div class="tile__art"><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 52V28h24M156 28h24v24M180 148v24h-24M44 172H20v-24"/><rect class="draw" style="--len:360" x="62" y="66" width="86" height="70" rx="6"/><path opacity=".35" d="M20 100h160"/><circle class="pulse-dot" cx="105" cy="101" r="5" fill="currentColor" stroke="none"/><path class="draw" style="--len:200" opacity=".55" d="M62 120c20-18 40-24 86-10"/></svg></div>
+          <div class="tile__art sim" data-compact data-sim="vision" data-label="Simulation: an object detector tracks moving objects with labeled bounding boxes."><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 52V28h24M156 28h24v24M180 148v24h-24M44 172H20v-24"/><rect class="draw" style="--len:360" x="62" y="66" width="86" height="70" rx="6"/><path opacity=".35" d="M20 100h160"/><circle class="pulse-dot" cx="105" cy="101" r="5" fill="currentColor" stroke="none"/><path class="draw" style="--len:200" opacity=".55" d="M62 120c20-18 40-24 86-10"/></svg></div>
           <span class="eyebrow">04</span>
           <h3>Computer Vision</h3>
           <p>Seeing terrain, obstacles, and disease, from aerial imagery and LiDAR to MRI.</p>
@@ -137,18 +141,6 @@
       </div>
     </div>
     <div class="rail" tabindex="0" aria-label="Recent highlights, scrollable">
-      <a class="card" href="https://arxiv.org/abs/2606.01442" target="_blank" rel="noopener">
-        <div class="card__meta"><span class="badge badge--award">★ Best Student Paper</span><span>IEEE CogMI 2026</span></div>
-        <h3>The Value of Spike Timing</h3>
-        <p>A leakage-resistant benchmark of spiking neural network design choices for network intrusion detection.</p>
-        <span class="link-arrow">Read the paper</span>
-      </a>
-      <a class="card" href="https://github.com/micheleguidaa/early-nids-artifact" target="_blank" rel="noopener">
-        <div class="card__meta"><span class="badge badge--award">★ Best Student Paper</span><span>IEEE TPS 2026</span></div>
-        <h3>Shortcut Learning in Early Intrusion Detection</h3>
-        <p>How header fingerprints let detectors look accurate for the wrong reasons, measured across four datasets.</p>
-        <span class="link-arrow">View the artifact</span>
-      </a>
       <a class="card" href="publications.html?q=ICMLA+2026">
         <div class="card__meta"><span class="badge">Accepted</span><span>ICMLA 2026</span></div>
         <h3>Two papers on agentic AI for cyber defense</h3>
@@ -167,6 +159,44 @@
         <p>Measuring the judgment boundary in multi-agent systems security.</p>
         <span class="link-arrow">Read the paper</span>
       </a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="awards-h">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow">Awards · 2026</span>
+        <h2 id="awards-h" class="display">Three paper awards in one season.</h2>
+        <p class="lead">Recognized at IEEE CIC, CogMI, and TPS 2026 in San Jose.</p>
+      </div>
+      <div class="awards"><article class="award reveal" style="--d:0.00s">
+          <a class="award__img" href="assets/docs/awards/cic-2026-best-paper-falcon.pdf" target="_blank" rel="noopener" aria-label="View the certificate for FALCON: Transforming Cyber Threat Intelligence into Deployable IDS Rules with Self-Reflection"><img src="assets/img/awards/cic-2026-best-paper-falcon.webp" alt="Best Paper Award certificate, IEEE CIC 2026" width="1100" height="855" loading="lazy" decoding="async"></a>
+          <div class="award__body">
+            <span class="badge badge--award">★ Best Paper Award</span>
+            <h3>FALCON: Transforming Cyber Threat Intelligence into Deployable IDS Rules with Self-Reflection</h3>
+            <p class="award__venue">IEEE CIC 2026 · San Jose, CA</p>
+            <p class="award__who"><b>Shaswata Mitra</b>, <b>Subash Neupane</b>, Martin Duclos, Aritran Piplai, <b>Sudip Mittal</b>, Md Rayhanur Rahman, Edward Zieglar, <b>Shahram Rahimi</b></p>
+            <div class="award__links"><a class="link-arrow" href="https://arxiv.org/abs/2508.18684" target="_blank" rel="noopener">Read the paper</a><a class="link-arrow" href="assets/docs/awards/cic-2026-best-paper-falcon.pdf" target="_blank" rel="noopener">Certificate</a></div>
+          </div>
+        </article><article class="award reveal" style="--d:0.06s">
+          <a class="award__img" href="assets/docs/awards/cogmi-2026-best-student-paper-snn.pdf" target="_blank" rel="noopener" aria-label="View the certificate for The Value of Spike Timing: A Leakage-Resistant Benchmark of SNN Design Choices for Network Intrusion Detection"><img src="assets/img/awards/cogmi-2026-best-student-paper-snn.webp" alt="Best Student Paper Award certificate, IEEE CogMI 2026" width="1100" height="855" loading="lazy" decoding="async"></a>
+          <div class="award__body">
+            <span class="badge badge--award">★ Best Student Paper Award</span>
+            <h3>The Value of Spike Timing: A Leakage-Resistant Benchmark of SNN Design Choices for Network Intrusion Detection</h3>
+            <p class="award__venue">IEEE CogMI 2026 · San Jose, CA</p>
+            <p class="award__who"><b>Raj Patel</b>, <b>Shaswata Mitra</b>, David Amebley, <b>Taye Akinrele</b>, Sayanton Dibbo, <b>Shahram Rahimi</b></p>
+            <div class="award__links"><a class="link-arrow" href="https://arxiv.org/abs/2606.01442" target="_blank" rel="noopener">Read the paper</a><a class="link-arrow" href="assets/docs/awards/cogmi-2026-best-student-paper-snn.pdf" target="_blank" rel="noopener">Certificate</a></div>
+          </div>
+        </article><article class="award reveal" style="--d:0.12s">
+          <a class="award__img" href="assets/docs/awards/tps-2026-best-student-paper-shortcut.pdf" target="_blank" rel="noopener" aria-label="View the certificate for Shortcut Learning in Early Intrusion Detection: Header Fingerprints Across Four Datasets"><img src="assets/img/awards/tps-2026-best-student-paper-shortcut.webp" alt="Best Student Paper Award certificate, IEEE TPS 2026" width="1100" height="855" loading="lazy" decoding="async"></a>
+          <div class="award__body">
+            <span class="badge badge--award">★ Best Student Paper Award</span>
+            <h3>Shortcut Learning in Early Intrusion Detection: Header Fingerprints Across Four Datasets</h3>
+            <p class="award__venue">IEEE TPS 2026 · San Jose, CA</p>
+            <p class="award__who"><b>Michele Guida</b>, Stefano Iannucci, <b>Raj Patel</b>, <b>Shahram Rahimi</b>, <b>Sudip Mittal</b>, Paolo Merialdo</p><p class="award__note">Led by Michele Guida, a visiting scholar with PATENT from Roma Tre University, Italy.</p>
+            <div class="award__links"><a class="link-arrow" href="https://github.com/micheleguidaa/early-nids-artifact" target="_blank" rel="noopener">View the artifact</a><a class="link-arrow" href="assets/docs/awards/tps-2026-best-student-paper-shortcut.pdf" target="_blank" rel="noopener">Certificate</a></div>
+          </div>
+        </article></div>
     </div>
   </section>
 
@@ -223,7 +253,7 @@
   <div class="wrap">
     <div class="footer__grid">
       <div>
-        <div class="footer__brand">PATENT</div>
+        <svg class="footer__logo" viewBox="0 0 420 96" role="img" aria-label="PATENT Lab, The University of Alabama"><use href="#patent-lockup"/></svg>
         <p>Predictive Analytics and Technology Integration Lab</p>
         <address>Department of Computer Science<br>Cyber Hall, 248 Kirkbride Ln<br>Tuscaloosa, AL 35401</address>
       </div>
@@ -240,11 +270,16 @@
         <ul><li><a href="https://patent.cse.msstate.edu" target="_blank" rel="noopener">PATENT at Mississippi State ↗</a></li><li><a href="https://cs.ua.edu" target="_blank" rel="noopener">UA Computer Science ↗</a></li><li><a href="https://eng.ua.edu" target="_blank" rel="noopener">UA College of Engineering ↗</a></li></ul>
       </div>
     </div>
-    <div class="footer__legal">
+  </div>
+  <div class="footer__legal">
+    <div class="wrap">
       <p>© <span data-year>2026</span> PATENT Lab, The University of Alabama. Maintained by the lab; views expressed here are not those of the University.</p>
       <ul><li><a href="https://www.ua.edu/disclaimer" target="_blank" rel="noopener">Disclaimer</a></li><li><a href="https://www.ua.edu/privacy" target="_blank" rel="noopener">Privacy</a></li><li><a href="https://accessibility.ua.edu/" target="_blank" rel="noopener">Accessibility</a></li></ul>
     </div>
   </div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="pgfoot" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b8243e"/><stop offset="1" stop-color="#7a1426"/></linearGradient>
+    <g id="patent-lockup"><g transform="translate(8 16)"><rect width="64" height="64" rx="16" fill="url(#pgfoot)"/><path d="M21 49V15h13.5a10.5 10.5 0 0 1 0 21H21" fill="none" stroke="#fff" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M36.5 38.5 45 47" fill="none" stroke="#c9ced1" stroke-width="2.4" stroke-linecap="round" stroke-dasharray=".5 4.6"/><g fill="#fff"><circle cx="21" cy="15" r="4.6"/><circle cx="45" cy="25.5" r="4.6"/><circle cx="21" cy="49" r="4.6"/></g><g fill="#9e1b32"><circle cx="21" cy="15" r="1.8"/><circle cx="45" cy="25.5" r="1.8"/><circle cx="21" cy="49" r="1.8"/></g><circle cx="47.6" cy="49.6" r="4.6" fill="none" stroke="#c9ced1" stroke-width="2.4"/></g>
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"><text fill="currentColor" x="90" y="54" font-size="40" font-weight="800" letter-spacing="1">PATENT</text><text fill="currentColor" x="262" y="54" font-size="40" font-weight="300" letter-spacing="1">LAB</text><rect style="fill:var(--muted)" x="90" y="64" width="270" height="1.5" opacity=".6"/><text style="fill:var(--muted)" x="90" y="82" font-size="12.5" font-weight="600" letter-spacing="3.1">THE UNIVERSITY OF ALABAMA</text></g></g></defs></svg>
 </footer>
 </body>
 </html>

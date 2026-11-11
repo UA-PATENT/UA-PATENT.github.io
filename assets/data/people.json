@@ -25,8 +25,7 @@
    "office": "Cyber Hall 3022",
    "email": "srahimi1@ua.edu",
    "photo": "assets/img/people/shahram-rahimi",
-   "scholar": "https://scholar.google.com/citations?user=cRqh6lwAAAAJ&hl=en",
-   "metrics": "rahimi"
+   "scholar": "https://scholar.google.com/citations?user=cRqh6lwAAAAJ&hl=en"
   },
   {
    "name": "Dr. Sudip Mittal",
@@ -36,8 +35,7 @@
    "email": "sudip.mittal@ua.edu",
    "photo": "assets/img/people/sudip-mittal",
    "scholar": "https://scholar.google.com/citations?user=HxIicawAAAAJ&hl=en",
-   "website": "https://www.sudipmittal.com/",
-   "metrics": "mittal"
+   "website": "https://www.sudipmittal.com/"
   },
   {
    "name": "Dr. Noorbakhsh Amiri Golilarz",
@@ -49,8 +47,7 @@
    "scholar": "https://scholar.google.com/citations?user=aNPnv24AAAAJ&hl=en",
    "linkedin": "https://www.linkedin.com/in/noorbakhsh-amiri-phd-d-eng-a7505a61",
    "website": "https://sites.ua.edu/brains/",
-   "lab": "brains",
-   "metrics": "amiri"
+   "lab": "brains"
   },
   {
    "name": "Dr. Subash Neupane",
@@ -59,8 +56,7 @@
    "office": "Cyber Hall 2210",
    "email": "sneupane4@ua.edu",
    "scholar": "https://scholar.google.com/citations?user=EbML-C0AAAAJ&hl=en",
-   "photo": "assets/img/people/subash-neupane",
-   "metrics": "neupane"
+   "photo": "assets/img/people/subash-neupane"
   },
   {
    "name": "Raj Patel",
@@ -78,25 +74,29 @@
    "group": "phd",
    "email": "htripathi@crimson.ua.edu",
    "linkedin": "https://www.linkedin.com/in/himanshu-tripathi-154a80274",
-   "lab": "brains"
+   "lab": "brains",
+   "scholar": "https://scholar.google.com/citations?user=1m6a2tAAAAAJ&hl=en"
   },
   {
    "name": "Shaswata Mitra",
    "role": "PhD Student",
    "group": "phd",
-   "email": "smitra3@crimson.ua.edu"
+   "email": "smitra3@crimson.ua.edu",
+   "scholar": "https://scholar.google.com/citations?user=drsx2nkAAAAJ&hl=en"
   },
   {
    "name": "Taye Akinrele",
    "role": "PhD Student",
    "group": "phd",
-   "email": "toakinrele@crimson.ua.edu"
+   "email": "toakinrele@crimson.ua.edu",
+   "scholar": "https://scholar.google.com/citations?user=ZtndUIAAAAAJ&hl=en"
   },
   {
    "name": "Charlotte Crowell",
    "role": "PhD Student",
    "group": "phd",
-   "email": "cecrowell@crimson.ua.edu"
+   "email": "cecrowell@crimson.ua.edu",
+   "scholar": "https://scholar.google.com/citations?user=l-qKGlsAAAAJ&hl=en"
   },
   {
    "name": "Maryam Aghdam",

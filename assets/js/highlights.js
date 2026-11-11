@@ -5,7 +5,7 @@
   var mounts = document.querySelectorAll('[data-highlights]');
   if (!mounts.length) return;
 
-  var FACULTY = { rahimi: 'Rahimi', mittal: 'Mittal', amiri: 'Amiri Golilarz', neupane: 'Neupane' };
+  var FACULTY = {};
 
   function esc(s) {
     return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; });
@@ -41,8 +41,11 @@
 
   Promise.all([
     fetch('assets/data/highlights.json').then(function (r) { return r.json(); }),
-    fetch('assets/data/publications.json').then(function (r) { return r.json(); })
+    fetch('assets/data/publications.json').then(function (r) { return r.json(); }),
+    fetch('assets/data/metrics.json').then(function (r) { return r.json(); }).catch(function () { return {}; })
   ]).then(function (res) {
+    var fac = (res[2] && res[2].faculty) || {};
+    Object.keys(fac).forEach(function (k) { FACULTY[k] = fac[k].name.replace(/^Dr\.\s+/, '').split(' ').slice(1).join(' '); });
     var pubs = res[1].publications;
     var items = res[0].highlights.map(function (h) {
       var m = h.match.toLowerCase();

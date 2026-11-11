@@ -1,0 +1,30 @@
+{
+ "_doc": "Settings for scripts/sync_scholar.py. Faculty Scholar profiles (people.json, group 'faculty') supply the publication list; everyone with a Scholar link gets metrics.",
+ "start_year": 2021,
+ "brains_titles": [
+  "Can We Anticipate Violence? Multimodal Learning from Pre-Incident Behavioral Cues",
+  "CMDO: A Cognitive Memory-Driven Optimization Algorithm for Adaptive Population-Based Search",
+  "ChildGaze: A Benchmark Dataset for Collaborative Behavior Understanding in Children",
+  "DARP: A Calibrated Dual-Arm RGB-D-IR Dataset for Multi-View Robotic Perception",
+  "Where Should Experience Live? Hierarchical Hebbian Memory for Continual Vision Transformers",
+  "Seeing Through Extreme Visual Sparsity: Surface Understanding from a Single Random Visual Patch",
+  "A Taxonomy of Cognitive Capability Gaps in Generative and Agentic AI",
+  "Cognitive Firewall: A Proactive, Zero-Trust, Multi-Gate Framework for LLM Safety",
+  "Adaptive Hebbian Memory Routing in Vision Transformers for Few-Shot Learning",
+  "From Convolution to Transformer: A Comparative Study of U-Net Variants for Brain Tumor and Retinal Vessel Segmentation",
+  "Where to Bind Matters: Hebbian Fast Weights in Vision Transformers for Few-Shot Character Recognition",
+  "Bridging the Gap: Toward Cognitive Autonomy in Artificial Intelligence",
+  "One Patch is All You Need: Joint Surface Material Reconstruction and Classification from Minimal Visual Cues",
+  "Reforming Artificial Intelligence: A Call for Cognitive Containment",
+  "Towards Neurocognitive-Inspired Intelligence: From AI’s Structural Mimicry to Human-Like Functional Cognition",
+  "Surformer v2: A Multimodal Classifier for Surface Understanding from Touch and Vision",
+  "Learning in Focus: Detecting Behavioral and Collaborative Engagement Using Vision Transformers",
+  "Surformer v1: Transformer-Based Surface Classification Using Tactile and Vision Features"
+ ],
+ "aliases": {
+  "On the Evaluation of Spiking Neural Network Configurations": "The Value of Spike Timing"
+ },
+ "skip_titles": [
+  "Intelligent Systems with Applications"
+ ]
+}

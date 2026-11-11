@@ -1,45 +1,94 @@
 {
  "updated": "2026-11-11",
  "since": 2021,
- "faculty": {
-  "neupane": {
-   "name": "Dr. Subash Neupane",
-   "scholar": "https://scholar.google.com/citations?user=EbML-C0AAAAJ&hl=en",
-   "citations": 1199,
-   "hIndex": 16,
-   "i10": 17,
-   "citationsSince": 1199
+ "people": {
+  "cRqh6lwAAAAJ": {
+   "name": "Dr. Shahram Rahimi",
+   "citations": 4948,
+   "hIndex": 34,
+   "i10": 99,
+   "citationsSince": 3410
   },
-  "mittal": {
+  "HxIicawAAAAJ": {
    "name": "Dr. Sudip Mittal",
-   "scholar": "https://scholar.google.com/citations?user=HxIicawAAAAJ&hl=en",
    "citations": 6046,
    "hIndex": 40,
    "i10": 81,
    "citationsSince": 5345
   },
-  "amiri": {
+  "aNPnv24AAAAJ": {
    "name": "Dr. Noorbakhsh Amiri Golilarz",
-   "scholar": "https://scholar.google.com/citations?user=aNPnv24AAAAJ&hl=en",
    "citations": 3613,
    "hIndex": 29,
    "i10": 43,
    "citationsSince": 3127
   },
+  "EbML-C0AAAAJ": {
+   "name": "Dr. Subash Neupane",
+   "citations": 1199,
+   "hIndex": 16,
+   "i10": 17,
+   "citationsSince": 1199
+  },
+  "2qoIGecAAAAJ": {
+   "name": "Raj Patel",
+   "citations": 77,
+   "hIndex": 4,
+   "i10": 3,
+   "citationsSince": 77
+  },
+  "1m6a2tAAAAAJ": {
+   "name": "Himanshu Tripathi",
+   "citations": 154,
+   "hIndex": 5,
+   "i10": 3,
+   "citationsSince": 154
+  },
+  "drsx2nkAAAAJ": {
+   "name": "Shaswata Mitra",
+   "citations": 547,
+   "hIndex": 12,
+   "i10": 15,
+   "citationsSince": 547
+  },
+  "ZtndUIAAAAAJ": {
+   "name": "Taye Akinrele",
+   "citations": 2,
+   "hIndex": 1,
+   "i10": 0,
+   "citationsSince": 2
+  },
+  "l-qKGlsAAAAJ": {
+   "name": "Charlotte Crowell",
+   "citations": 6,
+   "hIndex": 1,
+   "i10": 0,
+   "citationsSince": 6
+  }
+ },
+ "faculty": {
   "rahimi": {
    "name": "Dr. Shahram Rahimi",
-   "scholar": "https://scholar.google.com/citations?user=cRqh6lwAAAAJ&hl=en",
-   "citations": 4948,
-   "hIndex": 34,
-   "i10": 99,
-   "citationsSince": 3410
+   "scholar": "cRqh6lwAAAAJ"
+  },
+  "mittal": {
+   "name": "Dr. Sudip Mittal",
+   "scholar": "HxIicawAAAAJ"
+  },
+  "golilarz": {
+   "name": "Dr. Noorbakhsh Amiri Golilarz",
+   "scholar": "aNPnv24AAAAJ"
+  },
+  "neupane": {
+   "name": "Dr. Subash Neupane",
+   "scholar": "EbML-C0AAAAJ"
   }
  },
  "lab": {
-  "publications": 147,
+  "publications": 148,
   "citations": 4256,
   "journal": 49,
-  "conference": 98,
+  "conference": 99,
   "brains": 15
  }
 }
