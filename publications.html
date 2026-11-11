@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Publications · PATENT Lab</title>
+<meta name="description" content="Publications from PATENT Lab researchers, searchable by research area, type, title, author, and venue.">
+<meta name="theme-color" content="#0c090a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#faf8f7" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PATENT Lab">
+<meta property="og:title" content="Publications · PATENT Lab">
+<meta property="og:description" content="Publications from PATENT Lab researchers, searchable by research area, type, title, author, and venue.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>(function(){var d=document.documentElement,t;d.className=d.className.replace('no-js','js');try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';d.setAttribute('data-theme',t)})();</script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/publications.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav__inner wrap">
+    <a class="brand" href="./" aria-label="PATENT Lab home"><svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#9e1b32"/><path d="M11 24V8h6.5a5 5 0 0 1 0 10H11" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22.5" cy="23.5" r="2.2" fill="#fff"/></svg>PATENT<small>Lab · UA</small></a>
+    <nav aria-label="Primary"><ul class="nav__links" id="nav-links"><li><a href="research.html">Research</a></li><li><a href="people.html">People</a></li><li><a href="publications.html" aria-current="page">Publications</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="nav__actions">
+      <button class="icon-toggle" type="button" data-theme-toggle aria-label="Switch theme"><svg class="icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg><svg class="icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7Z"/></svg></button>
+      <button class="icon-toggle nav__menu" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Publications</span>
+      <h1 class="display-xl">Papers.</h1>
+      <p class="lead">Work by PATENT researchers at Alabama and Mississippi State. Filter by area or type, or search by title, author, or venue.</p>
+    </div>
+  </section>
+  <div class="toolbar">
+    <div class="wrap toolbar__row">
+      <label class="search"><span class="sr-only">Search publications</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pub-search" type="search" placeholder="Search titles, authors, venues" autocomplete="off"></label>
+      <div class="chips" role="group" aria-label="Filter by research area"><button class="chip" type="button" data-topic="all" aria-pressed="true">All</button><button class="chip" type="button" data-topic="security" aria-pressed="false">Cybersecurity</button><button class="chip" type="button" data-topic="healthcare" aria-pressed="false">Healthcare</button><button class="chip" type="button" data-topic="cps" aria-pressed="false">Robotics &amp; CPS</button><button class="chip" type="button" data-topic="vision" aria-pressed="false">Vision</button><button class="chip" type="button" data-topic="xai" aria-pressed="false">Explainable AI</button></div>
+      <label><span class="sr-only">Filter by type</span><select class="select" id="pub-type">
+        <option value="all">All types</option><option value="journal">Journal</option><option value="conference">Conference</option><option value="workshop">Workshop</option><option value="poster">Poster</option>
+      </select></label>
+    </div>
+  </div>
+  <section class="section--tight" style="padding-top:0">
+    <div class="wrap">
+      <p class="result-count" id="pub-count" aria-live="polite"></p>
+      <div id="pubs" aria-busy="true">
+        <noscript><p class="empty">Turn on JavaScript to browse publications.</p></noscript>
+      </div>
+      <p class="result-count">Missing a paper? Email <a href="mailto:cs-patent@ua.edu" style="color:var(--accent)">cs-patent@ua.edu</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">PATENT</div>
+        <p>Predictive Analytics and Technology Integration Lab</p>
+        <address>Department of Computer Science<br>Cyber Hall, 248 Kirkbride Ln<br>Tuscaloosa, AL 35401</address>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul><li><a href="research.html">Research</a></li><li><a href="people.html">People</a></li><li><a href="publications.html">Publications</a></li><li><a href="about.html">About</a></li></ul>
+      </div>
+      <div>
+        <h2>Connect</h2>
+        <ul><li><a href="contact.html">Contact</a></li><li><a href="contact.html#join">Join the lab</a></li><li><a href="mailto:cs-patent@ua.edu">cs-patent@ua.edu</a></li></ul>
+      </div>
+      <div>
+        <h2>Partners</h2>
+        <ul><li><a href="https://patent.cse.msstate.edu" target="_blank" rel="noopener">PATENT at Mississippi State ↗</a></li><li><a href="https://cs.ua.edu" target="_blank" rel="noopener">UA Computer Science ↗</a></li><li><a href="https://eng.ua.edu" target="_blank" rel="noopener">UA College of Engineering ↗</a></li></ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span data-year>2026</span> PATENT Lab, The University of Alabama. Maintained by the lab; views expressed here are not those of the University.</p>
+      <ul><li><a href="https://www.ua.edu/disclaimer" target="_blank" rel="noopener">Disclaimer</a></li><li><a href="https://www.ua.edu/privacy" target="_blank" rel="noopener">Privacy</a></li><li><a href="https://accessibility.ua.edu/" target="_blank" rel="noopener">Accessibility</a></li></ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

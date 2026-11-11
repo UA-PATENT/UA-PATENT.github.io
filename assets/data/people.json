@@ -1,0 +1,101 @@
+{
+ "groups": [
+  {
+   "id": "faculty",
+   "title": "Faculty"
+  },
+  {
+   "id": "phd",
+   "title": "PhD Students"
+  },
+  {
+   "id": "ms",
+   "title": "MS Students"
+  },
+  {
+   "id": "ug",
+   "title": "Undergraduate Researchers"
+  }
+ ],
+ "people": [
+  {
+   "name": "Dr. Shahram Rahimi",
+   "role": "Department Head, Professor",
+   "group": "faculty",
+   "office": "Cyber Hall 3022",
+   "email": "srahimi1@ua.edu"
+  },
+  {
+   "name": "Dr. Sudip Mittal",
+   "role": "Associate Professor",
+   "group": "faculty",
+   "office": "Cyber Hall 3011",
+   "email": "sudip.mittal@ua.edu"
+  },
+  {
+   "name": "Dr. Noorbakhsh Amiri Golilarz",
+   "role": "Assistant Professor",
+   "group": "faculty",
+   "office": "Cyber Hall 3006",
+   "email": "namirigolilarz@ua.edu"
+  },
+  {
+   "name": "Dr. Subash Neupane",
+   "role": "Assistant Professor",
+   "group": "faculty",
+   "office": "Cyber Hall 2210",
+   "email": "sneupane4@ua.edu",
+   "scholar": "https://scholar.google.com/citations?user=EbML-C0AAAAJ&hl=en"
+  },
+  {
+   "name": "Raj Patel",
+   "role": "PhD Student",
+   "group": "phd",
+   "email": "rpatel38@ua.edu",
+   "scholar": "https://scholar.google.com/citations?user=2qoIGecAAAAJ&hl=en",
+   "linkedin": "https://www.linkedin.com/in/uarajpatel/",
+   "website": "https://rajpatel-ua.github.io",
+   "photo": "assets/img/people/raj-patel"
+  },
+  {
+   "name": "Himanshu Tripathi",
+   "role": "PhD Student",
+   "group": "phd",
+   "email": "htripathi@crimson.ua.edu",
+   "linkedin": "https://www.linkedin.com/in/himanshu-tripathi-154a80274"
+  },
+  {
+   "name": "Shaswata Mitra",
+   "role": "PhD Student",
+   "group": "phd",
+   "email": "smitra3@crimson.ua.edu"
+  },
+  {
+   "name": "Taye Akinrele",
+   "role": "PhD Student",
+   "group": "phd",
+   "email": "toakinrele@crimson.ua.edu"
+  },
+  {
+   "name": "Charlotte Crowell",
+   "role": "PhD Student",
+   "group": "phd",
+   "email": "cecrowell@crimson.ua.edu"
+  },
+  {
+   "name": "Maryam Aghdam",
+   "role": "PhD Student",
+   "group": "phd"
+  },
+  {
+   "name": "Sagar Neupane",
+   "role": "PhD Student",
+   "group": "phd"
+  },
+  {
+   "name": "Nazmul Hoque",
+   "role": "PhD Student",
+   "group": "phd"
+  }
+ ]
+}
