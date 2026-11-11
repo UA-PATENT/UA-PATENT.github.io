@@ -4,18 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Publications · PATENT Lab</title>
-<meta name="description" content="Publications from PATENT Lab researchers, searchable by research area, type, title, author, and venue.">
+<meta name="description" content="Journal and conference papers by PATENT Lab faculty and students, searchable by area, lab, faculty, type, and citations.">
 <meta name="theme-color" content="#0c090a" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#faf8f7" media="(prefers-color-scheme: light)">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PATENT Lab">
 <meta property="og:title" content="Publications · PATENT Lab">
-<meta property="og:description" content="Publications from PATENT Lab researchers, searchable by research area, type, title, author, and venue.">
+<meta property="og:description" content="Journal and conference papers by PATENT Lab faculty and students, searchable by area, lab, faculty, type, and citations.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/style.css">
 <script>(function(){var d=document.documentElement,t;d.className=d.className.replace('no-js','js');try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';d.setAttribute('data-theme',t)})();</script>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/publications.js" defer></script>
+<script src="assets/js/highlights.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -35,16 +36,42 @@
     <div class="wrap">
       <span class="eyebrow">Publications</span>
       <h1 class="display-xl">Papers.</h1>
-      <p class="lead">Work by PATENT researchers at Alabama and Mississippi State. Filter by area or type, or search by title, author, or venue.</p>
+      <p class="lead">Journal and conference papers since 2021 by PATENT faculty (Drs. Rahimi, Mittal, Amiri Golilarz, and Neupane) and their students, including the BRAINS Lab.</p>
+      <dl class="stats pub-metrics" id="pub-metrics">
+        <div class="stat"><dt>Publications since 2021</dt><dd>147</dd></div>
+        <div class="stat"><dt>Citations to these papers</dt><dd>4,256</dd></div>
+        <div class="stat"><dt>Journal articles</dt><dd>49</dd></div>
+        <div class="stat"><dt>Conference papers</dt><dd>98</dd></div>
+      </dl>
     </div>
   </section>
+
+  <section class="section--tight section--alt" id="most-cited" aria-labelledby="most-cited-h">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow">Most cited</span>
+        <h2 id="most-cited-h" class="display">Highlights.</h2>
+        <p class="lead">Our most-cited papers since 2021, each with a key figure from the paper.</p>
+      </div>
+      <div class="posters" data-highlights></div>
+    </div>
+  </section>
+
   <div class="toolbar">
-    <div class="wrap toolbar__row">
-      <label class="search"><span class="sr-only">Search publications</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pub-search" type="search" placeholder="Search titles, authors, venues" autocomplete="off"></label>
-      <div class="chips" role="group" aria-label="Filter by research area"><button class="chip" type="button" data-topic="all" aria-pressed="true">All</button><button class="chip" type="button" data-topic="security" aria-pressed="false">Cybersecurity</button><button class="chip" type="button" data-topic="healthcare" aria-pressed="false">Healthcare</button><button class="chip" type="button" data-topic="cps" aria-pressed="false">Robotics &amp; CPS</button><button class="chip" type="button" data-topic="vision" aria-pressed="false">Vision</button><button class="chip" type="button" data-topic="xai" aria-pressed="false">Explainable AI</button></div>
-      <label><span class="sr-only">Filter by type</span><select class="select" id="pub-type">
-        <option value="all">All types</option><option value="journal">Journal</option><option value="conference">Conference</option><option value="workshop">Workshop</option><option value="poster">Poster</option>
-      </select></label>
+    <div class="wrap">
+      <div class="toolbar__row">
+        <label class="search"><span class="sr-only">Search publications</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pub-search" type="search" placeholder="Search titles, authors, venues" autocomplete="off"></label>
+        <div class="chips" role="group" aria-label="Filter by research area"><button class="chip" type="button" data-topic="all" aria-pressed="true">All</button><button class="chip" type="button" data-topic="security" aria-pressed="false">Cybersecurity</button><button class="chip" type="button" data-topic="healthcare" aria-pressed="false">Healthcare</button><button class="chip" type="button" data-topic="cps" aria-pressed="false">Robotics &amp; CPS</button><button class="chip" type="button" data-topic="vision" aria-pressed="false">Vision</button><button class="chip" type="button" data-topic="xai" aria-pressed="false">Explainable AI</button></div>
+      </div>
+      <div class="toolbar__row">
+        <button class="chip chip--lab" type="button" data-lab="brains" aria-pressed="false">BRAINS Lab</button>
+        <span class="toolbar__sep" aria-hidden="true"></span>
+        <label><span class="sr-only">Filter by faculty</span><select class="select" id="pub-faculty"><option value="all">All faculty</option><option value="neupane">Subash Neupane</option><option value="mittal">Sudip Mittal</option><option value="amiri">Noorbakhsh Amiri Golilarz</option><option value="rahimi">Shahram Rahimi</option></select></label>
+        <label><span class="sr-only">Filter by type</span><select class="select" id="pub-type">
+          <option value="all">All types</option><option value="journal">Journal</option><option value="conference">Conference</option><option value="workshop">Workshop</option>
+        </select></label>
+        <label><span class="sr-only">Sort</span><select class="select" id="pub-sort"><option value="year">Newest first</option><option value="cites">Most cited</option></select></label>
+      </div>
     </div>
   </div>
   <section class="section--tight" style="padding-top:0">
@@ -53,7 +80,7 @@
       <div id="pubs" aria-busy="true">
         <noscript><p class="empty">Turn on JavaScript to browse publications.</p></noscript>
       </div>
-      <p class="result-count">Missing a paper? Email <a href="mailto:cs-patent@ua.edu" style="color:var(--accent)">cs-patent@ua.edu</a>.</p>
+      <p class="result-count">Counts and citations from Google Scholar, updated 2026-11-11. Missing a paper? Email <a href="mailto:cs-patent@ua.edu" style="color:var(--accent)">cs-patent@ua.edu</a>.</p>
     </div>
   </section>
 </main>

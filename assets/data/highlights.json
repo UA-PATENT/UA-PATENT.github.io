@@ -1,0 +1,56 @@
+{
+ "note": "Most-cited PATENT papers (2021 onward). 'match' is the start of the title in publications.json; citation counts are read from there. Figures are from each paper's arXiv version.",
+ "highlights": [
+  {
+   "match": "Blockchain-federated-learning and deep learning models for covid-19",
+   "short": "Blockchain-Federated Learning for COVID-19 Detection",
+   "summary": "A capsule-network model that segments and classifies COVID-19 in CT scans. Hospitals train it together through blockchain-based federated learning, without pooling patient data.",
+   "image": "assets/img/highlights/covid.webp", "width": 959, "height": 750,
+   "figure": "Fig. 1: Capsule-based (SegCaps) segmentation and classification model",
+   "paper": "https://arxiv.org/abs/2007.06537"
+  },
+  {
+   "match": "Explainable Intrusion Detection Systems (X-IDS)",
+   "short": "Explainable Intrusion Detection Systems (X-IDS)",
+   "summary": "A survey that organizes explainable intrusion detection into white-box and black-box families, and proposes an architecture for designing an X-IDS.",
+   "taxonomy": {
+    "White box": ["Regression", "Rule-based", "Clustering", "Statistical & probabilistic"],
+    "Black box": ["Feature", "Perturbation", "Decomposition", "Hybrid"]
+   },
+   "figure": "Taxonomy of X-IDS techniques (after Fig. 2)",
+   "paper": "https://arxiv.org/abs/2207.06236"
+  },
+  {
+   "match": "Explainable predictive maintenance",
+   "short": "Explainable Predictive Maintenance",
+   "summary": "A survey of how explainable and interpretable ML are used for anomaly detection, fault diagnosis, and prognosis in predictive maintenance.",
+   "image": "assets/img/highlights/xpdm.webp", "width": 1400, "height": 783,
+   "figure": "Fig. 1: The XAI design cycle",
+   "paper": "https://arxiv.org/abs/2401.07871"
+  },
+  {
+   "match": "Generating Fake Cyber Threat Intelligence",
+   "short": "Generating Fake Cyber Threat Intelligence",
+   "summary": "GPT-2, fine-tuned on security news, vulnerability reports, and APT notes, generates fake threat intelligence realistic enough to poison cybersecurity knowledge graphs.",
+   "image": "assets/img/highlights/fakecti.webp", "width": 1400, "height": 574,
+   "figure": "Fig. 1: Fine-tuning GPT-2 on open-source cyber threat intelligence",
+   "paper": "https://arxiv.org/abs/2102.04351"
+  },
+  {
+   "match": "Security considerations in AI-robotics",
+   "short": "Security Considerations in AI-Robotics",
+   "summary": "A survey of attacks and defenses across the perception, navigation, and control stacks of AI-enabled robots, along with the ethical and legal questions they raise.",
+   "image": "assets/img/highlights/airobotics.webp", "width": 952, "height": 330,
+   "figure": "Fig. 1: A generic robot architecture: sense, plan, act",
+   "paper": "https://arxiv.org/abs/2310.08565"
+  },
+  {
+   "match": "LocalIntel",
+   "short": "LocalIntel",
+   "summary": "An LLM framework that combines global threat repositories with an organization's own knowledge to produce threat intelligence specific to that organization.",
+   "image": "assets/img/highlights/localintel.webp", "width": 1400, "height": 814,
+   "figure": "Fig. 3: Retrieval and generation phases",
+   "paper": "https://arxiv.org/abs/2401.10036"
+  }
+ ]
+}

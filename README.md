@@ -31,8 +31,10 @@ Edit [`assets/data/people.json`](assets/data/people.json). Each person is one en
 }
 ```
 
-- `group` must be one of the `id`s in the `groups` list: `faculty`, `visiting`, `phd`, `ms`, `ug`. Empty groups are hidden.
+- `group` must be one of the `id`s in the `groups` list: `faculty`, `phd`, `ms`, `ug`. Empty groups are hidden.
 - `office`, `scholar`, `linkedin`, `website`, and `photo` are optional. Fields you leave out are hidden.
+- `lab: "brains"` adds a BRAINS Lab tag to the card.
+- `metrics` (faculty only) is a key into `metrics.json` (`rahimi`, `mittal`, `amiri`, `neupane`). It shows that person's Google Scholar citations and h-index on the card.
 - Without `photo`, the card shows a blank portrait.
 
 ### Adding a headshot
@@ -74,9 +76,17 @@ Edit [`assets/data/publications.json`](assets/data/publications.json). The list 
 ```
 
 - `type`: `journal`, `conference`, `workshop`, or `poster`.
+- `cites`: Google Scholar citation count. `faculty`: which PATENT faculty are authors (`rahimi`, `mittal`, `amiri`, `neupane`). `labs`: `["brains"]` for BRAINS Lab papers. These fields drive the filters and the "Most cited" sort.
 - `topics` drive the filters: `security`, `healthcare`, `cps`, `vision`, `xai`.
 - `authors`, `venue`, `award`, and `status` are optional. Current lab members' names appear in bold automatically.
 - The home page publication count and lab member count are read from these files, so they stay current.
+
+**What's included:** journal and conference papers from 2021 onward on the Google Scholar profiles of Drs. Rahimi, Mittal, Amiri Golilarz, and Neupane, with duplicate versions merged. Preprints, theses, books, patents, and grant records are left out.
+
+### Metrics and highlights
+
+- [`assets/data/metrics.json`](assets/data/metrics.json) holds each faculty member's Scholar citations, h-index, and i10-index, plus lab totals: publications, citations to those papers, journal and conference counts, and BRAINS papers. Update it when you refresh the publication list.
+- [`assets/data/highlights.json`](assets/data/highlights.json) lists the most-cited papers shown as poster cards on the home and Publications pages. `match` is the beginning of the paper's title in `publications.json`, which is where the citation count comes from. The figures in `assets/img/highlights/` come from each paper's arXiv version.
 
 ## Pages
 

@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <script>(function(){var d=document.documentElement,t;d.className=d.className.replace('no-js','js');try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';d.setAttribute('data-theme',t)})();</script>
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/highlights.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -56,9 +57,9 @@
       <h2 id="mission" class="sr-only">Our mission</h2>
       <p class="statement"><span class="statement__fill">At PATENT, we build <em>explainable, data-driven AI</em> for healthcare, cybersecurity, robotics, and computer vision, turning complex data into predictions people can trust and act on.</span></p>
       <dl class="stats">
-        <div class="stat reveal"><dt>Publications</dt><dd data-count-pubs>75</dd></div>
-        <div class="stat reveal" style="--d:.06s"><dt>Lab members</dt><dd data-count-members>12</dd></div>
-        <div class="stat reveal" style="--d:.12s"><dt>Research areas</dt><dd data-count="4">4</dd></div>
+        <div class="stat reveal"><dt>Publications since 2021</dt><dd data-count-pubs>147</dd></div>
+        <div class="stat reveal" style="--d:.06s"><dt>Citations to those papers</dt><dd data-count-citations>4,256</dd></div>
+        <div class="stat reveal" style="--d:.12s"><dt>Lab members</dt><dd data-count-members>12</dd></div>
         <div class="stat reveal" style="--d:.18s"><dt>Best Student Paper awards in 2026</dt><dd data-count="2">2</dd></div>
       </dl>
     </div>
@@ -99,6 +100,25 @@
           <p>Seeing terrain, obstacles, and disease, from aerial imagery and LiDAR to MRI.</p>
           <span class="link-arrow">Explore</span>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight section--alt" aria-labelledby="labs" style="padding-top:0">
+    <div class="wrap">
+      <div class="labs-band reveal">
+        <div>
+          <span class="eyebrow">A lab within PATENT</span>
+          <h3 id="labs"><span>BRAINS</span> Lab</h3>
+          <p>Bioinspired Robotics, AI, Imaging &amp; Neurocognitive Systems. Led by Dr. Noorbakhsh Amiri Golilarz, BRAINS builds machines that perceive, learn, and act more like people, from a humanoid robot platform to hyperspectral, medical, and sports vision.</p>
+          <p class="acronym"><span><b>B</b>ioinspired</span><span><b>R</b>obotics</span><span><b>A</b>I</span><span><b>I</b>maging</span><span><b>N</b>eurocognitive</span><span><b>S</b>ystems</span></p>
+          <div class="btns"><a class="btn btn--primary" href="research.html#brains">Explore BRAINS</a><a class="btn btn--ghost" href="https://sites.ua.edu/brains/" target="_blank" rel="noopener">BRAINS website ↗</a></div>
+        </div>
+        <div class="mosaic" aria-hidden="true">
+          <img src="assets/img/brains/baseball.webp" alt="" width="1000" height="503" loading="lazy" decoding="async">
+          <img src="assets/img/brains/gaze.webp" alt="" width="493" height="280" loading="lazy" decoding="async">
+          <img src="assets/img/brains/mri.webp" alt="" width="271" height="137" loading="lazy" decoding="async">
+        </div>
       </div>
     </div>
   </section>
@@ -150,7 +170,20 @@
     </div>
   </section>
 
-  <section class="section section--alt" aria-labelledby="campuses">
+  <section class="section section--alt" aria-labelledby="cited">
+    <div class="wrap">
+      <div class="rail-head section__head reveal" style="max-width:none">
+        <div>
+          <span class="eyebrow">Most-cited work</span>
+          <h2 id="cited" class="display">Research others build on.</h2>
+        </div>
+        <a class="link-arrow" href="publications.html#most-cited">All highlights</a>
+      </div>
+      <div class="posters" data-highlights data-limit="3"></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="campuses">
     <div class="wrap">
       <div class="section__head reveal">
         <span class="eyebrow">One lab, two campuses</span>
@@ -176,7 +209,7 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="join">
+  <section class="section section--alt" aria-labelledby="join">
     <div class="wrap cta reveal">
       <span class="eyebrow">Join us</span>
       <h2 id="join" class="display-xl">Work with us.</h2>

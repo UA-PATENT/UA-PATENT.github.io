@@ -35,23 +35,37 @@
     return '<a class="icon-btn" href="' + esc(url) + '"' + ext + ' aria-label="' + labels[kind] + esc(name) + '" title="' + (kind === 'email' ? esc(href) : labels[kind].replace(/ of $/, '')) + '">' + ICONS[kind] + '</a>';
   }
 
+  var LABS = { brains: { name: 'BRAINS Lab', href: 'research.html#brains' } };
+  var metrics = {};
+
+  function fmt(n) { return Number(n).toLocaleString('en-US'); }
+
   function card(p, i) {
     var links = ['email', 'scholar', 'linkedin', 'website']
       .filter(function (k) { return p[k]; })
       .map(function (k) { return link(k, p[k], p.name); }).join('');
+    var lab = p.lab && LABS[p.lab] ? '<a class="lab-tag" href="' + LABS[p.lab].href + '">' + LABS[p.lab].name + '</a>' : '';
+    var m = p.metrics && metrics[p.metrics];
+    var stats = m ? '<p class="person__stats" title="Google Scholar, all time"><span><b>' + fmt(m.citations) + '</b> citations</span><span><b>' + m.hIndex + '</b> h-index</span></p>' : '';
     return '<li class="person reveal" style="--d:' + (i % 4) * 0.06 + 's">' +
       portrait(p, i < 4) +
       '<div class="person__body">' +
+        lab +
         '<h3 class="person__name">' + esc(p.name) + '</h3>' +
         '<p class="person__role">' + esc(p.role || '') + '</p>' +
         (p.office ? '<p class="person__office">' + esc(p.office) + '</p>' : '') +
+        stats +
         (links ? '<div class="person__links">' + links + '</div>' : '') +
       '</div></li>';
   }
 
-  fetch('assets/data/people.json')
-    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(function (data) {
+  Promise.all([
+    fetch('assets/data/people.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    fetch('assets/data/metrics.json').then(function (r) { return r.json(); }).catch(function () { return { faculty: {} }; })
+  ])
+    .then(function (res) {
+      var data = res[0];
+      metrics = res[1].faculty || {};
       var html = data.groups.map(function (g) {
         var members = data.people.filter(function (p) { return p.group === g.id; });
         if (!members.length) return '';

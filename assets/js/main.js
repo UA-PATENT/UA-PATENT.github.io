@@ -75,7 +75,7 @@
 
   /* ---------- Count-up stats ---------- */
   var countUp = function (el, to) {
-    if (reduceMotion || !('IntersectionObserver' in window)) { el.textContent = to + (el.dataset.suffix || ''); return; }
+    if (reduceMotion || !('IntersectionObserver' in window)) { el.textContent = to.toLocaleString('en-US') + (el.dataset.suffix || ''); return; }
     var obs = new IntersectionObserver(function (entries) {
       if (!entries[0].isIntersecting) return;
       obs.disconnect();
@@ -83,7 +83,7 @@
       var step = function (t) {
         var k = Math.min((t - t0) / dur, 1);
         var eased = 1 - Math.pow(1 - k, 4);
-        el.textContent = Math.round(to * eased) + (el.dataset.suffix || '');
+        el.textContent = Math.round(to * eased).toLocaleString('en-US') + (el.dataset.suffix || '');
         if (k < 1) requestAnimationFrame(step);
       };
       requestAnimationFrame(step);
@@ -97,6 +97,12 @@
   if (pubCount && window.fetch) {
     fetch('assets/data/publications.json').then(function (r) { return r.json(); }).then(function (d) {
       countUp(pubCount, d.publications.length);
+    }).catch(function () {});
+  }
+  var citeCount = document.querySelector('[data-count-citations]');
+  if (citeCount && window.fetch) {
+    fetch('assets/data/metrics.json').then(function (r) { return r.json(); }).then(function (d) {
+      countUp(citeCount, d.lab.citations);
     }).catch(function () {});
   }
   var memberCount = document.querySelector('[data-count-members]');

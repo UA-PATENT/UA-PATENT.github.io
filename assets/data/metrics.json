@@ -1,0 +1,45 @@
+{
+ "updated": "2026-11-11",
+ "since": 2021,
+ "faculty": {
+  "neupane": {
+   "name": "Dr. Subash Neupane",
+   "scholar": "https://scholar.google.com/citations?user=EbML-C0AAAAJ&hl=en",
+   "citations": 1199,
+   "hIndex": 16,
+   "i10": 17,
+   "citationsSince": 1199
+  },
+  "mittal": {
+   "name": "Dr. Sudip Mittal",
+   "scholar": "https://scholar.google.com/citations?user=HxIicawAAAAJ&hl=en",
+   "citations": 6046,
+   "hIndex": 40,
+   "i10": 81,
+   "citationsSince": 5345
+  },
+  "amiri": {
+   "name": "Dr. Noorbakhsh Amiri Golilarz",
+   "scholar": "https://scholar.google.com/citations?user=aNPnv24AAAAJ&hl=en",
+   "citations": 3613,
+   "hIndex": 29,
+   "i10": 43,
+   "citationsSince": 3127
+  },
+  "rahimi": {
+   "name": "Dr. Shahram Rahimi",
+   "scholar": "https://scholar.google.com/citations?user=cRqh6lwAAAAJ&hl=en",
+   "citations": 4948,
+   "hIndex": 34,
+   "i10": 99,
+   "citationsSince": 3410
+  }
+ },
+ "lab": {
+  "publications": 147,
+  "citations": 4256,
+  "journal": 49,
+  "conference": 98,
+  "brains": 15
+ }
+}

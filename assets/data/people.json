@@ -23,21 +23,34 @@
    "role": "Department Head, Professor",
    "group": "faculty",
    "office": "Cyber Hall 3022",
-   "email": "srahimi1@ua.edu"
+   "email": "srahimi1@ua.edu",
+   "photo": "assets/img/people/shahram-rahimi",
+   "scholar": "https://scholar.google.com/citations?user=cRqh6lwAAAAJ&hl=en",
+   "metrics": "rahimi"
   },
   {
    "name": "Dr. Sudip Mittal",
    "role": "Associate Professor",
    "group": "faculty",
    "office": "Cyber Hall 3011",
-   "email": "sudip.mittal@ua.edu"
+   "email": "sudip.mittal@ua.edu",
+   "photo": "assets/img/people/sudip-mittal",
+   "scholar": "https://scholar.google.com/citations?user=HxIicawAAAAJ&hl=en",
+   "website": "https://www.sudipmittal.com/",
+   "metrics": "mittal"
   },
   {
    "name": "Dr. Noorbakhsh Amiri Golilarz",
-   "role": "Assistant Professor",
+   "role": "Assistant Professor · Director, BRAINS Lab",
    "group": "faculty",
    "office": "Cyber Hall 3006",
-   "email": "namirigolilarz@ua.edu"
+   "email": "namirigolilarz@ua.edu",
+   "photo": "assets/img/people/noorbakhsh-amiri-golilarz",
+   "scholar": "https://scholar.google.com/citations?user=aNPnv24AAAAJ&hl=en",
+   "linkedin": "https://www.linkedin.com/in/noorbakhsh-amiri-phd-d-eng-a7505a61",
+   "website": "https://sites.ua.edu/brains/",
+   "lab": "brains",
+   "metrics": "amiri"
   },
   {
    "name": "Dr. Subash Neupane",
@@ -45,7 +58,9 @@
    "group": "faculty",
    "office": "Cyber Hall 2210",
    "email": "sneupane4@ua.edu",
-   "scholar": "https://scholar.google.com/citations?user=EbML-C0AAAAJ&hl=en"
+   "scholar": "https://scholar.google.com/citations?user=EbML-C0AAAAJ&hl=en",
+   "photo": "assets/img/people/subash-neupane",
+   "metrics": "neupane"
   },
   {
    "name": "Raj Patel",
@@ -62,7 +77,8 @@
    "role": "PhD Student",
    "group": "phd",
    "email": "htripathi@crimson.ua.edu",
-   "linkedin": "https://www.linkedin.com/in/himanshu-tripathi-154a80274"
+   "linkedin": "https://www.linkedin.com/in/himanshu-tripathi-154a80274",
+   "lab": "brains"
   },
   {
    "name": "Shaswata Mitra",
