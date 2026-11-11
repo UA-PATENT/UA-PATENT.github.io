@@ -173,6 +173,8 @@ TOPICS = {
     "healthcare": r"patient|medical|clinical|sepsis|covid|\bhealth(?:care)?\b|hospital|mri|lesion|sclerosis|cancer|tumor|retinal|ecg|arrhythmia|mental|ventilation|hipaa|drug|protein|compartmental|disinfection|disease|brain",
     "cps": r"robot|humanoid|vehicle|navigation|path planning|digital twin|cyber-physical|maintenance|remaining useful|machinery|fault|charging|internet of things|iot|smart cit|coverage|manufacturab|farming|agricultur|drone|uav|unmanned",
     "vision": r"image|vision|visual|lidar|point cloud|obstacle|crack detection|mri|flair|rgb|gaze|surface|handwritten|ocr|hyperspectral|segmentation|u-net|video|denois|pixel",
+    "agentic": r"\bagent|agentic|multi-agent|multiagent",
+    "llm": r"\bllms?\b|large language|language model|\bgpt|chatgpt|\brag\b|retrieval[- ]augmented|chatbot|vision[- ]language|\bprompt",
     "xai": r"explainab|interpretab|explanation|explainer|rule extraction|neuro-?symbolic|knowledge graph|graphrag|ontology|counterfactual|game theory|neurocognitive|cognitive",
 }
 
@@ -228,7 +230,7 @@ def build_publications(profiles, faculty, old, cfg):
                 excluded.append(reason)
                 continue
             kept.append({"title": fix_case(r["title"].rstrip(".")), "year": r["year"],
-                         "type": "conference" if re.search(CONF, v, re.I) else "journal",
+                         "type": "poster" if re.search(r"\bposter\b", v, re.I) else ("conference" if re.search(CONF, v, re.I) else "journal"),
                          "authors": r["authors"], "venue": tidy_venue(v), "url": r["url"],
                          "cites": r["cites"], "faculty": [fslug]})
 
@@ -357,6 +359,7 @@ def main():
     m["lab"] = {"publications": len(pubs), "citations": sum(p.get("cites", 0) for p in pubs),
                 "journal": sum(p["type"] == "journal" for p in pubs),
                 "conference": sum(p["type"] in ("conference", "workshop") for p in pubs),
+                "posters": sum(p["type"] == "poster" for p in pubs),
                 "brains": sum("brains" in p.get("labs", []) for p in pubs)}
     save(METRICS, m)
 

@@ -50,3 +50,16 @@
     }).then(function () { button.disabled = false; button.textContent = 'Send message'; });
   });
 })();
+
+/* "Copy coordinates" button on the map card */
+(function () {
+  'use strict';
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy'), label = btn.textContent;
+      var done = function () { btn.textContent = 'Copied ✓'; setTimeout(function () { btn.textContent = label; }, 1800); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, function () { window.prompt('Copy these coordinates:', text); });
+      else window.prompt('Copy these coordinates:', text);
+    });
+  });
+})();

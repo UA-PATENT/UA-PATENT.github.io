@@ -10,10 +10,11 @@
   var facSel = document.getElementById('pub-faculty');
   var sortSel = document.getElementById('pub-sort');
   var labBtn = document.querySelector('[data-lab]');
+  var posterBtn = document.querySelector('[data-type-chip]');
   var chips = Array.prototype.slice.call(document.querySelectorAll('[data-topic]'));
   var countEl = document.getElementById('pub-count');
 
-  var TOPIC_LABEL = { security: 'Cybersecurity', healthcare: 'Healthcare', cps: 'Robotics & CPS', vision: 'Vision', xai: 'Explainable AI' };
+  var TOPIC_LABEL = { security: 'Cybersecurity', healthcare: 'Healthcare', cps: 'Robotics & CPS', vision: 'Vision', xai: 'Explainable AI', agentic: 'Agentic AI', llm: 'LLMs' };
   var TYPE_LABEL = { journal: 'Journal', conference: 'Conference', workshop: 'Workshop', poster: 'Poster' };
 
   var params = new URLSearchParams(location.search);
@@ -92,6 +93,8 @@
 
     chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c.dataset.topic === state.topic)); });
     if (labBtn) labBtn.setAttribute('aria-pressed', String(state.lab === labBtn.dataset.lab));
+    if (posterBtn) posterBtn.setAttribute('aria-pressed', String(state.type === 'poster'));
+    if (typeSel) typeSel.value = state.type;
     var qs = new URLSearchParams();
     ['topic', 'lab', 'faculty', 'type'].forEach(function (k) { if (state[k] !== 'all') qs.set(k, state[k]); });
     if (state.sort !== 'year') qs.set('sort', state.sort);
@@ -101,6 +104,7 @@
 
   chips.forEach(function (c) { c.addEventListener('click', function () { state.topic = c.dataset.topic; render(); }); });
   if (labBtn) labBtn.addEventListener('click', function () { state.lab = state.lab === labBtn.dataset.lab ? 'all' : labBtn.dataset.lab; render(); });
+  if (posterBtn) posterBtn.addEventListener('click', function () { state.type = state.type === 'poster' ? 'all' : 'poster'; render(); });
   [[typeSel, 'type'], [facSel, 'faculty'], [sortSel, 'sort']].forEach(function (pair) {
     if (!pair[0]) return;
     pair[0].value = state[pair[1]];
@@ -122,9 +126,14 @@
   Promise.all([
     fetch('assets/data/publications.json').then(function (r) { return r.json(); }),
     fetch('assets/data/people.json').then(function (r) { return r.json(); }).catch(function () { return { people: [] }; }),
-    fetch('assets/data/metrics.json').then(function (r) { return r.json(); }).catch(function () { return {}; })
+    fetch('assets/data/metrics.json').then(function (r) { return r.json(); }).catch(function () { return {}; }),
+    fetch('assets/data/posters.json').then(function (r) { return r.json(); }).catch(function () { return { posters: [] }; })
   ]).then(function (res) {
-    pubs = res[0].publications;
+    /* posters from posters.json join the list as poster entries */
+    var extra = (res[3].posters || []).map(function (p) {
+      return { title: p.title, year: p.year, type: 'poster', authors: p.authors || '', venue: p.event || 'Poster session', url: p.pdf || p.image, cites: 0, faculty: p.faculty || [], topics: p.topics || [], labs: p.labs || [] };
+    });
+    pubs = res[0].publications.concat(extra.filter(function (e) { return !res[0].publications.some(function (q) { return q.title.toLowerCase() === e.title.toLowerCase(); }); }));
     members = res[1].people.map(function (p) { return nameKey(p.name); });
     metricsStrip(res[2]);
     mount.removeAttribute('aria-busy');

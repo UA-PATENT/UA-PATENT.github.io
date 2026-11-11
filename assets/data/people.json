@@ -25,7 +25,8 @@
    "office": "Cyber Hall 3022",
    "email": "srahimi1@ua.edu",
    "photo": "assets/img/people/shahram-rahimi",
-   "scholar": "https://scholar.google.com/citations?user=cRqh6lwAAAAJ&hl=en"
+   "scholar": "https://scholar.google.com/citations?user=cRqh6lwAAAAJ&hl=en",
+   "linkedin": "https://www.linkedin.com/in/shahram-rahimi-480284/"
   },
   {
    "name": "Dr. Sudip Mittal",
@@ -35,7 +36,8 @@
    "email": "sudip.mittal@ua.edu",
    "photo": "assets/img/people/sudip-mittal",
    "scholar": "https://scholar.google.com/citations?user=HxIicawAAAAJ&hl=en",
-   "website": "https://www.sudipmittal.com/"
+   "website": "https://www.sudipmittal.com/",
+   "linkedin": "https://www.linkedin.com/in/sudipmittal/"
   },
   {
    "name": "Dr. Noorbakhsh Amiri Golilarz",
@@ -82,7 +84,8 @@
    "role": "PhD Student",
    "group": "phd",
    "email": "smitra3@crimson.ua.edu",
-   "scholar": "https://scholar.google.com/citations?user=drsx2nkAAAAJ&hl=en"
+   "scholar": "https://scholar.google.com/citations?user=drsx2nkAAAAJ&hl=en",
+   "linkedin": "https://www.linkedin.com/in/shaswatamitra/"
   },
   {
    "name": "Taye Akinrele",
@@ -96,7 +99,8 @@
    "role": "PhD Student",
    "group": "phd",
    "email": "cecrowell@crimson.ua.edu",
-   "scholar": "https://scholar.google.com/citations?user=l-qKGlsAAAAJ&hl=en"
+   "scholar": "https://scholar.google.com/citations?user=l-qKGlsAAAAJ&hl=en",
+   "linkedin": "https://www.linkedin.com/in/charlottecrowell/"
   },
   {
    "name": "Maryam Aghdam",
@@ -106,7 +110,8 @@
   {
    "name": "Sagar Neupane",
    "role": "PhD Student",
-   "group": "phd"
+   "group": "phd",
+   "linkedin": "https://www.linkedin.com/in/sagarneupane/"
   },
   {
    "name": "Nazmul Hoque",

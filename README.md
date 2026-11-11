@@ -120,7 +120,8 @@ The form on `contact.html` sends messages to **cs-patent@ua.edu** through [FormS
 | `research.html` | Research areas, focus areas, selected papers |
 | `people.html` | Team (rendered from `people.json`) |
 | `publications.html` | Searchable publications (rendered from `publications.json`) |
-| `about.html` | History of the lab at MSU and UA, funders |
+| `funding.html` | Current and past awards (NSF records), the McKay endowment, sponsors |
+| `about.html` | History of the lab at MSU and UA, interdisciplinary scope |
 | `contact.html` | Contact details, contact form, and how to join |
 | `404.html` | Not-found page (uses root-relative links) |
 
@@ -129,7 +130,10 @@ Every page repeats the same navigation and footer. If you change one, update all
 ## Design notes
 
 - Styles live in `assets/css/style.css`. Colors are design tokens at the top, with dark and light themes.
-- Brand colors are UA Crimson `#9E1B32` and UA Gray `#828A8F`. Logo files are in `assets/img/logo/`: `patent-mark.svg` (app-icon mark), plus `patent-lockup-light.svg` and `patent-lockup-dark.svg`, the full logo for light and dark backgrounds. These are the lab's own mark; they don't use UA's trademarked logos.
+- Brand colors are UA Crimson `#9E1B32` and UA Gray `#828A8F`. Logo files are in `assets/img/logo/`:
+  - `patent-mark.svg`: the crest mark, a shield with a P and an analytics bar chart.
+  - `patent-lockup-light.svg` and `patent-lockup-dark.svg`: the full logo for light and dark backgrounds.
+- **UA marks:** the nav shows UA's official Capstone A (Script A ®), and the footer shows the official UA wordmark. The unmodified files come from `assetfiles.ua.edu/brand/logos/` and live in `assets/img/ua/`. UA's rules require the Capstone A to appear with the University nameplate on the same page, so keep both. Don't recolor, redraw, or alter them; for other versions, contact Strategic Communications (brand.ua.edu).
 - The research simulations live in `assets/js/sims.js`. Any element with `data-sim="security|healthcare|cps|vision|training"` gets a canvas. The SVG inside it is the fallback. `data-compact` hides the text overlays.
 - Motion follows the scroll position, using CSS scroll-driven animations where the browser supports them and a small JavaScript fallback elsewhere. It animates only `opacity` and `transform`.
 - If the visitor's system asks for reduced motion, all motion is turned off.

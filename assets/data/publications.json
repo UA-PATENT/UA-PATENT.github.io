@@ -139,7 +139,8 @@
     "rahimi"
    ],
    "topics": [
-    "healthcare"
+    "healthcare",
+    "agentic"
    ],
    "labs": []
   },
@@ -155,7 +156,9 @@
     "neupane",
     "rahimi"
    ],
-   "topics": [],
+   "topics": [
+    "agentic"
+   ],
    "labs": []
   },
   {
@@ -167,7 +170,8 @@
    "status": "Accepted",
    "url": "https://arxiv.org/abs/2603.09134",
    "topics": [
-    "security"
+    "security",
+    "agentic"
    ],
    "cites": 0,
    "faculty": [
@@ -190,7 +194,8 @@
     "rahimi"
    ],
    "topics": [
-    "security"
+    "security",
+    "agentic"
    ],
    "labs": [],
    "status": "Accepted",
@@ -224,7 +229,9 @@
     "golilarz",
     "rahimi"
    ],
-   "topics": [],
+   "topics": [
+    "agentic"
+   ],
    "labs": []
   },
   {
@@ -258,7 +265,8 @@
     "golilarz"
    ],
    "topics": [
-    "cps"
+    "cps",
+    "llm"
    ],
    "labs": [
     "brains"
@@ -298,7 +306,8 @@
     "rahimi"
    ],
    "topics": [
-    "security"
+    "security",
+    "llm"
    ],
    "labs": []
   },
@@ -380,7 +389,9 @@
    "faculty": [
     "rahimi"
    ],
-   "topics": [],
+   "topics": [
+    "llm"
+   ],
    "labs": []
   },
   {
@@ -506,7 +517,8 @@
    ],
    "topics": [
     "cps",
-    "vision"
+    "vision",
+    "llm"
    ],
    "labs": [
     "brains"
@@ -539,7 +551,8 @@
    "status": "Accepted",
    "url": "https://arxiv.org/abs/2610.07657",
    "topics": [
-    "security"
+    "security",
+    "agentic"
    ],
    "cites": 0,
    "faculty": [
@@ -596,7 +609,8 @@
     "rahimi"
    ],
    "topics": [
-    "healthcare"
+    "healthcare",
+    "llm"
    ],
    "labs": []
   },
@@ -648,7 +662,9 @@
     "neupane",
     "rahimi"
    ],
-   "topics": [],
+   "topics": [
+    "llm"
+   ],
    "labs": []
   },
   {
@@ -696,7 +712,9 @@
     "mittal",
     "neupane"
    ],
-   "topics": [],
+   "topics": [
+    "llm"
+   ],
    "labs": []
   },
   {
@@ -728,7 +746,9 @@
    "faculty": [
     "mittal"
    ],
-   "topics": [],
+   "topics": [
+    "llm"
+   ],
    "labs": []
   },
   {
@@ -745,6 +765,7 @@
    ],
    "topics": [
     "healthcare",
+    "llm",
     "xai"
    ],
    "labs": []
@@ -792,7 +813,8 @@
     "rahimi"
    ],
    "topics": [
-    "security"
+    "security",
+    "agentic"
    ],
    "labs": [],
    "curated": true
@@ -811,7 +833,9 @@
     "rahimi"
    ],
    "topics": [
-    "security"
+    "security",
+    "agentic",
+    "llm"
    ],
    "labs": [],
    "curated": true
@@ -1111,7 +1135,9 @@
     "mittal",
     "rahimi"
    ],
-   "topics": [],
+   "topics": [
+    "llm"
+   ],
    "labs": []
   },
   {
@@ -1127,7 +1153,9 @@
     "neupane",
     "rahimi"
    ],
-   "topics": [],
+   "topics": [
+    "llm"
+   ],
    "labs": []
   },
   {
@@ -1144,7 +1172,8 @@
     "rahimi"
    ],
    "topics": [
-    "healthcare"
+    "healthcare",
+    "llm"
    ],
    "labs": []
   },
@@ -1213,7 +1242,9 @@
     "neupane",
     "rahimi"
    ],
-   "topics": [],
+   "topics": [
+    "llm"
+   ],
    "labs": []
   },
   {
@@ -1283,6 +1314,7 @@
    ],
    "topics": [
     "healthcare",
+    "llm",
     "xai"
    ],
    "labs": []
@@ -1353,7 +1385,8 @@
     "rahimi"
    ],
    "topics": [
-    "security"
+    "security",
+    "llm"
    ],
    "labs": []
   },
@@ -1400,7 +1433,9 @@
    "faculty": [
     "mittal"
    ],
-   "topics": [],
+   "topics": [
+    "llm"
+   ],
    "labs": []
   },
   {
@@ -1864,22 +1899,6 @@
    "labs": []
   },
   {
-   "title": "CTI4AI: Threat Intelligence Generation and Sharing after Red Teaming AI Models",
-   "year": 2022,
-   "type": "conference",
-   "authors": "C Nguyen, C Morgan, S Mittal",
-   "venue": "ACM Conference on Computer and Communications Security (ACM CCS 2022) - Poster",
-   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:NhqRSupF_l8C",
-   "cites": 8,
-   "faculty": [
-    "mittal"
-   ],
-   "topics": [
-    "security"
-   ],
-   "labs": []
-  },
-  {
    "title": "Enforcement of Laws and Privacy Preferences in Modern Computing Systems",
    "year": 2022,
    "type": "conference",
@@ -1925,6 +1944,22 @@
    "topics": [
     "security",
     "cps"
+   ],
+   "labs": []
+  },
+  {
+   "title": "CTI4AI: Threat Intelligence Generation and Sharing after Red Teaming AI Models",
+   "year": 2022,
+   "type": "poster",
+   "authors": "C Nguyen, C Morgan, S Mittal",
+   "venue": "ACM Conference on Computer and Communications Security (ACM CCS 2022) - Poster",
+   "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:NhqRSupF_l8C",
+   "cites": 8,
+   "faculty": [
+    "mittal"
+   ],
+   "topics": [
+    "security"
    ],
    "labs": []
   },
