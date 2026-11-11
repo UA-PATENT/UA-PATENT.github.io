@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var root = document.documentElement;
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches || root.classList.contains('motion-paused');
 
   /* ---------- Theme toggle (initial theme is set inline in <head> to avoid a flash) ---------- */
   document.querySelectorAll('[data-theme-toggle]').forEach(function (btn) {
@@ -18,6 +18,38 @@
       sync();
     });
   });
+
+  /* ---------- Pause / play all animations (WCAG 2.2.2); the choice is remembered ---------- */
+  document.querySelectorAll('[data-motion-toggle]').forEach(function (btn) {
+    var sync = function () {
+      var paused = root.classList.contains('motion-paused');
+      btn.setAttribute('aria-pressed', String(paused));
+      btn.setAttribute('aria-label', paused ? 'Play animations' : 'Pause animations');
+      btn.setAttribute('title', paused ? 'Play animations' : 'Pause animations');
+    };
+    sync();
+    btn.addEventListener('click', function () {
+      var paused = !root.classList.contains('motion-paused');
+      root.classList.toggle('motion-paused', paused);
+      try { localStorage.setItem('motion', paused ? 'paused' : 'playing'); } catch (e) {}
+      document.dispatchEvent(new CustomEvent('patent:motion', { detail: { paused: paused } }));
+      sync();
+    });
+  });
+
+  /* ---------- Tell screen-reader users when a link opens a new tab, including links rendered later ---------- */
+  var markNewTab = function (scope) {
+    (scope.querySelectorAll ? scope.querySelectorAll('a[target="_blank"]') : []).forEach(function (a) {
+      if (a.querySelector('.sr-newtab')) return;
+      var s = document.createElement('span'); s.className = 'sr-only sr-newtab'; s.textContent = ' (opens in a new tab)';
+      a.appendChild(s);
+    });
+  };
+  markNewTab(document);
+  if ('MutationObserver' in window) {
+    new MutationObserver(function (list) { list.forEach(function (m) { m.addedNodes.forEach(function (n) { if (n.nodeType === 1) { if (n.matches && n.matches('a[target="_blank"]')) markNewTab(n.parentNode); else markNewTab(n); } }); }); })
+      .observe(document.body, { childList: true, subtree: true });
+  }
 
   /* ---------- Nav: frosted once scrolled, mobile menu ---------- */
   var nav = document.querySelector('.nav');

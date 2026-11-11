@@ -1,5 +1,5 @@
 /* Renders assets/data/publications.json with search, topic, lab, faculty, type filters and sorting.
-   State is mirrored in the URL (?topic=security&lab=brains&faculty=mittal&type=journal&sort=cites&q=intrusion)
+   State is mirrored in the URL (?topic=security&faculty=mittal&type=journal&sort=cites&q=intrusion)
    so filtered views can be linked. */
 (function () {
   'use strict';
@@ -9,7 +9,6 @@
   var typeSel = document.getElementById('pub-type');
   var facSel = document.getElementById('pub-faculty');
   var sortSel = document.getElementById('pub-sort');
-  var labBtn = document.querySelector('[data-lab]');
   var posterBtn = document.querySelector('[data-type-chip]');
   var chips = Array.prototype.slice.call(document.querySelectorAll('[data-topic]'));
   var countEl = document.getElementById('pub-count');
@@ -20,7 +19,7 @@
   var params = new URLSearchParams(location.search);
   var state = {
     topic: params.get('topic') || 'all', type: params.get('type') || 'all', faculty: params.get('faculty') || 'all',
-    lab: params.get('lab') || 'all', sort: params.get('sort') || 'year', q: params.get('q') || ''
+    sort: params.get('sort') || 'year', q: params.get('q') || ''
   };
   var pubs = [], members = [];
 
@@ -50,7 +49,6 @@
     if (state.topic !== 'all' && p.topics.indexOf(state.topic) < 0) return false;
     if (state.type !== 'all' && p.type !== state.type) return false;
     if (state.faculty !== 'all' && (p.faculty || []).indexOf(state.faculty) < 0) return false;
-    if (state.lab !== 'all' && (p.labs || []).indexOf(state.lab) < 0) return false;
     if (state.q) {
       var hay = (p.title + ' ' + (p.authors || '') + ' ' + (p.venue || '') + ' ' + p.year).toLowerCase();
       return state.q.toLowerCase().split(/\s+/).every(function (w) { return hay.indexOf(w) > -1; });
@@ -62,7 +60,6 @@
     var badges = '';
     if (p.award) badges += '<span class="badge badge--award">★ ' + esc(p.award) + '</span>';
     if (p.status) badges += '<span class="badge">' + esc(p.status) + '</span>';
-    if ((p.labs || []).indexOf('brains') > -1) badges += '<span class="badge badge--lab">BRAINS Lab</span>';
     badges += '<span class="badge badge--muted">' + TYPE_LABEL[p.type] + '</span>';
     p.topics.forEach(function (t) { badges += '<span class="badge badge--muted">' + TOPIC_LABEL[t] + '</span>'; });
     var cites = p.cites ? '<span class="pub__cites" title="Google Scholar citations"><b>' + fmt(p.cites) + '</b> cited</span>' : '';
@@ -92,18 +89,16 @@
     countEl.textContent = list.length === pubs.length ? pubs.length + ' publications' : list.length + ' of ' + pubs.length + ' publications';
 
     chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c.dataset.topic === state.topic)); });
-    if (labBtn) labBtn.setAttribute('aria-pressed', String(state.lab === labBtn.dataset.lab));
     if (posterBtn) posterBtn.setAttribute('aria-pressed', String(state.type === 'poster'));
     if (typeSel) typeSel.value = state.type;
     var qs = new URLSearchParams();
-    ['topic', 'lab', 'faculty', 'type'].forEach(function (k) { if (state[k] !== 'all') qs.set(k, state[k]); });
+    ['topic', 'faculty', 'type'].forEach(function (k) { if (state[k] !== 'all') qs.set(k, state[k]); });
     if (state.sort !== 'year') qs.set('sort', state.sort);
     if (state.q) qs.set('q', state.q);
     history.replaceState(null, '', location.pathname + (qs.toString() ? '?' + qs : '') + location.hash);
   }
 
   chips.forEach(function (c) { c.addEventListener('click', function () { state.topic = c.dataset.topic; render(); }); });
-  if (labBtn) labBtn.addEventListener('click', function () { state.lab = state.lab === labBtn.dataset.lab ? 'all' : labBtn.dataset.lab; render(); });
   if (posterBtn) posterBtn.addEventListener('click', function () { state.type = state.type === 'poster' ? 'all' : 'poster'; render(); });
   [[typeSel, 'type'], [facSel, 'faculty'], [sortSel, 'sort']].forEach(function (pair) {
     if (!pair[0]) return;
@@ -131,7 +126,7 @@
   ]).then(function (res) {
     /* posters from posters.json join the list as poster entries */
     var extra = (res[3].posters || []).map(function (p) {
-      return { title: p.title, year: p.year, type: 'poster', authors: p.authors || '', venue: p.event || 'Poster session', url: p.pdf || p.image, cites: 0, faculty: p.faculty || [], topics: p.topics || [], labs: p.labs || [] };
+      return { title: p.title, year: p.year, type: 'poster', authors: p.authors || '', venue: p.event || 'Poster session', url: p.pdf || p.image, cites: 0, faculty: p.faculty || [], topics: p.topics || [] };
     });
     pubs = res[0].publications.concat(extra.filter(function (e) { return !res[0].publications.some(function (q) { return q.title.toLowerCase() === e.title.toLowerCase(); }); }));
     members = res[1].people.map(function (p) { return nameKey(p.name); });

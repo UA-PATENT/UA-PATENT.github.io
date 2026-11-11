@@ -800,3 +800,89 @@ a.contact-card:hover { transform: translateY(-4px); border-color: var(--border-s
 .ua-nameplate img { height: 15px; width: auto; }
 .footer__legal .wrap { align-items: center; }
 @media (max-width: 560px) { .ua-sep { margin: 0 -14px; } .brand small { display: none; } }
+.poster__fig--art .poster__art { aspect-ratio: 16 / 10; display: grid; place-items: center; color: #9e1b32; background: radial-gradient(60% 70% at 50% 50%, rgba(158, 27, 50, .08), transparent 70%); }
+.poster__fig--art .poster__art svg { height: 70%; width: auto; }
+
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+/* Keep focused elements clear of the sticky sub-nav and filter bar (WCAG 2.4.11) */
+html:has(.subnav) { scroll-padding-top: calc(var(--nav-h) + 76px); }
+html:has(.toolbar) { scroll-padding-top: calc(var(--nav-h) + 140px); }
+
+/* Visitor-controlled pause for all motion (WCAG 2.2.2). Set by the nav button and remembered. */
+.motion-paused *, .motion-paused *::before, .motion-paused *::after { animation: none !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+.js.motion-paused .reveal { opacity: 1 !important; transform: none !important; }
+.motion-paused .hero--scene { height: auto; }
+.motion-paused .hero--scene .hero__sticky { position: relative; height: auto; }
+.motion-paused .draw { stroke-dashoffset: 0; }
+[data-motion-toggle] .icon--play { display: none; }
+.motion-paused [data-motion-toggle] .icon--pause { display: none; }
+.motion-paused [data-motion-toggle] .icon--play { display: block; }
+
+/* Pause button on each simulation */
+.sim__toggle { position: absolute; right: 10px; bottom: 10px; z-index: 2; height: 30px; padding: 0 12px; border-radius: 999px; font-size: .76rem; font-weight: 600;
+  color: var(--text); background: var(--surface-solid); border: 1px solid var(--border-strong); opacity: .85; transition: opacity .2s; }
+.sim__toggle:hover, .sim__toggle:focus-visible { opacity: 1; }
+
+/* More contrast when the visitor's system asks for it */
+@media (prefers-contrast: more) {
+  [data-theme="dark"] { --muted: #d3d8db; --border: rgba(255, 255, 255, .28); --border-strong: rgba(255, 255, 255, .5); --faint: rgba(246, 240, 240, .35); }
+  [data-theme="light"] { --muted: #3a4044; --border: rgba(40, 18, 22, .3); --border-strong: rgba(40, 18, 22, .55); }
+  .badge--muted, .chip { border-width: 2px; }
+}
+
+/* Windows High Contrast / forced colors: gradient-clipped text would vanish, so draw it as plain text */
+@media (forced-colors: active) {
+  .hero__word, .statement__fill, .statement__fill em { background: none !important; color: CanvasText !important; -webkit-text-fill-color: CanvasText; }
+  .chip[aria-pressed="true"], .btn { border: 1px solid ButtonText; }
+  .hero__bg, .page-hero::before, .tile::after { display: none; }
+}
+
+/* Contact cards: label text instead of out-of-order headings */
+.contact-card__label { font-size: .82rem; color: var(--muted); font-weight: 500; }
+
+/* Reflow at 320px (WCAG 1.4.10) */
+.rail { position: relative; }   /* keeps screen-reader-only text inside the scroller */
+@media (max-width: 420px) {
+  .btn { white-space: normal; height: auto; min-height: 46px; padding-block: 10px; text-align: center; justify-content: center; }
+}
+@media (max-width: 380px) {
+  .nav__inner { gap: 10px; }
+  .nav__actions { gap: 0; }
+  .icon-toggle { width: 34px; height: 34px; }
+  .ua-mark img { width: 26px; height: 26px; }
+  .ua-sep { margin: 0 -6px; }
+  .brand { font-size: 1rem; }
+}
+
+/* Join the lab: each card ends with a clear action */
+.join__item { display: flex; flex-direction: column; }
+.join__actions { margin-top: auto; padding-top: 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+.join__direct { margin-top: 28px; padding: 18px 22px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); color: var(--muted); }
+.join__direct a { color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Sponsor logos (official files, unmodified) */
+.grant__who { display: inline-flex; align-items: center; gap: 10px; }
+.grant__logo { width: 40px; height: 40px; flex: none; }
+.funder--logo { display: grid; grid-template-columns: 56px 1fr; grid-template-rows: auto auto; column-gap: 14px; align-items: center; }
+.funder--logo img { grid-row: span 2; width: 56px; height: 56px; }
+.ack { margin-top: 28px; max-width: 900px; font-size: .86rem; color: var(--muted); line-height: 1.6; }
+
+/* Larger navigation bar on desktop */
+@media (min-width: 861px) {
+  :root { --nav-h: 72px; }
+  .nav__inner { gap: clamp(16px, 2vw, 28px); }
+  .brand { font-size: clamp(1.18rem, 1.5vw, 1.4rem); gap: 10px; }
+  .brand__mark { width: clamp(28px, 2.6vw, 34px); height: clamp(28px, 2.6vw, 34px); }
+  .brand small { font-size: .76rem; }
+  .ua-mark img { width: clamp(32px, 2.8vw, 38px); height: clamp(32px, 2.8vw, 38px); }
+  .ua-sep { height: 32px; }
+  .nav__links { gap: clamp(2px, .5vw, 8px); }
+  .nav__links a { font-size: clamp(.92rem, 1.15vw, 1.04rem); padding: 9px clamp(9px, 1.1vw, 16px); font-weight: 500; }
+  .icon-toggle { width: 42px; height: 42px; }
+  .icon-toggle svg { width: 21px; height: 21px; }
+}
+.brand, .ua-mark { flex: none; white-space: nowrap; }
+.brand__mark { flex: none; }
+@media (min-width: 861px) and (max-width: 1080px) { .brand small { display: none; } }

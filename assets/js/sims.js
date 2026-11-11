@@ -11,7 +11,7 @@
     var cs = getComputedStyle(root);
     var v = function (n, d) { return (cs.getPropertyValue(n) || '').trim() || d; };
     C = { text: v('--text', '#f6f0f0'), muted: v('--muted', '#aeb5b9'), accent: v('--accent', '#f4919f'), border: v('--border-strong', 'rgba(255,255,255,.18)'),
-          faint: v('--border', 'rgba(255,255,255,.09)'), bg: v('--bg', '#0c090a'), crimson: '#9e1b32', gray: '#828a8f', brains: v('--brains', '#8fd3ff'),
+          faint: v('--border', 'rgba(255,255,255,.09)'), bg: v('--bg', '#0c090a'), crimson: '#9e1b32', gray: '#828a8f',
           dark: root.getAttribute('data-theme') !== 'light' };
   }
   readColors();
@@ -416,6 +416,7 @@
     canvas.setAttribute('aria-label', el.getAttribute('data-label') || 'Animated simulation');
     el.appendChild(canvas); el.classList.add('sim--live');
     var ctx = canvas.getContext('2d'), sim = new Sim(), w = 0, h = 0, visible = false, last = 0, raf = 0;
+    var paused = root.classList.contains('motion-paused');
     sim.compact = el.hasAttribute('data-compact');
     function resize() {
       var r = el.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -427,14 +428,29 @@
     function paint() { ctx.clearRect(0, 0, w, h); sim.draw(ctx, w, h); }
     function frame(t) {
       raf = 0;
-      if (!visible || document.hidden) return;
+      if (!visible || document.hidden || paused) return;
       var dt = last ? Math.min((t - last) / 1000, .05) : .016; last = t;
       sim.step(dt); paint(); raf = requestAnimationFrame(frame);
     }
-    function start() { if (!raf && !reduce) { last = 0; raf = requestAnimationFrame(frame); } }
+    function start() { if (!raf && !reduce && !paused) { last = 0; raf = requestAnimationFrame(frame); } }
+    function setPaused(p) {
+      paused = p;
+      if (btn) { btn.textContent = p ? 'Play' : 'Pause'; btn.setAttribute('aria-pressed', String(p)); btn.setAttribute('aria-label', (p ? 'Play' : 'Pause') + ' this simulation'); }
+      if (!p && visible) start();
+    }
+    var btn = null;
+    if (!reduce && !el.hasAttribute('data-compact')) {
+      btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'sim__toggle';
+      btn.addEventListener('click', function () { setPaused(!paused); });
+      el.appendChild(btn);
+    }
+    setPaused(paused);
+    document.addEventListener('patent:motion', function (e) { setPaused(e.detail.paused); });
     resize();
     if (window.ResizeObserver) new ResizeObserver(resize).observe(el);
-    if (reduce) { for (var i = 0; i < 150; i++) sim.step(1 / 30); paint(); }
+    if (reduce || paused) { for (var i = 0; i < 150; i++) sim.step(1 / 30); paint(); }
+    if (reduce) { /* still frame only */ }
     else if ('IntersectionObserver' in window) {
       new IntersectionObserver(function (en) { visible = en[0].isIntersecting; if (visible) start(); }, { rootMargin: '80px' }).observe(el);
     } else { visible = true; start(); }

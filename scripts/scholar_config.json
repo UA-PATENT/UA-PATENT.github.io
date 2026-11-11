@@ -1,7 +1,13 @@
 {
- "_doc": "Settings for scripts/sync_scholar.py. Faculty Scholar profiles (people.json, group 'faculty') supply the publication list; everyone with a Scholar link gets metrics.",
+ "_doc": "Settings for scripts/sync_scholar.py. Faculty Scholar profiles (people.json, group 'faculty') supply the publication list; everyone with a Scholar link gets metrics. Partner-lab papers (BRAINS Lab) count as PATENT publications only when a PATENT core faculty member (partner_lab_requires) is an author.",
  "start_year": 2021,
- "brains_titles": [
+ "aliases": {
+  "On the Evaluation of Spiking Neural Network Configurations": "The Value of Spike Timing"
+ },
+ "skip_titles": [
+  "Intelligent Systems with Applications"
+ ],
+ "partner_lab_titles": [
   "Can We Anticipate Violence? Multimodal Learning from Pre-Incident Behavioral Cues",
   "CMDO: A Cognitive Memory-Driven Optimization Algorithm for Adaptive Population-Based Search",
   "ChildGaze: A Benchmark Dataset for Collaborative Behavior Understanding in Children",
@@ -21,10 +27,10 @@
   "Learning in Focus: Detecting Behavioral and Collaborative Engagement Using Vision Transformers",
   "Surformer v1: Transformer-Based Surface Classification Using Tactile and Vision Features"
  ],
- "aliases": {
-  "On the Evaluation of Spiking Neural Network Configurations": "The Value of Spike Timing"
- },
- "skip_titles": [
-  "Intelligent Systems with Applications"
+ "partner_lab_faculty": "golilarz",
+ "partner_lab_since": 2025,
+ "partner_lab_requires": [
+  "rahimi",
+  "mittal"
  ]
 }

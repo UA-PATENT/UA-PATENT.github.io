@@ -26,7 +26,8 @@
    "email": "srahimi1@ua.edu",
    "photo": "assets/img/people/shahram-rahimi",
    "scholar": "https://scholar.google.com/citations?user=cRqh6lwAAAAJ&hl=en",
-   "linkedin": "https://www.linkedin.com/in/shahram-rahimi-480284/"
+   "linkedin": "https://www.linkedin.com/in/shahram-rahimi-480284/",
+   "website": "https://sites.google.com/view/shahramrahimi/home"
   },
   {
    "name": "Dr. Sudip Mittal",
@@ -41,15 +42,14 @@
   },
   {
    "name": "Dr. Noorbakhsh Amiri Golilarz",
-   "role": "Assistant Professor · Director, BRAINS Lab",
+   "role": "Assistant Professor",
    "group": "faculty",
    "office": "Cyber Hall 3006",
    "email": "namirigolilarz@ua.edu",
    "photo": "assets/img/people/noorbakhsh-amiri-golilarz",
    "scholar": "https://scholar.google.com/citations?user=aNPnv24AAAAJ&hl=en",
    "linkedin": "https://www.linkedin.com/in/noorbakhsh-amiri-phd-d-eng-a7505a61",
-   "website": "https://sites.ua.edu/brains/",
-   "lab": "brains"
+   "website": "https://sites.ua.edu/brains/"
   },
   {
    "name": "Dr. Subash Neupane",
@@ -76,7 +76,6 @@
    "group": "phd",
    "email": "htripathi@crimson.ua.edu",
    "linkedin": "https://www.linkedin.com/in/himanshu-tripathi-154a80274",
-   "lab": "brains",
    "scholar": "https://scholar.google.com/citations?user=1m6a2tAAAAAJ&hl=en"
   },
   {

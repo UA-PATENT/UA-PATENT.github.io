@@ -33,7 +33,6 @@ Edit [`assets/data/people.json`](assets/data/people.json). Each person is one en
 
 - `group` must be one of the `id`s in the `groups` list: `faculty`, `phd`, `ms`, `ug`. Empty groups are hidden.
 - `office`, `scholar`, `linkedin`, `website`, and `photo` are optional. Fields you leave out are hidden.
-- `lab: "brains"` adds a BRAINS Lab tag to the card.
 - `metrics` (faculty only) is a key into `metrics.json` (`rahimi`, `mittal`, `amiri`, `neupane`). It shows that person's Google Scholar citations and h-index on the card.
 - Without `photo`, the card shows a blank portrait.
 
@@ -76,12 +75,14 @@ Edit [`assets/data/publications.json`](assets/data/publications.json). The list 
 ```
 
 - `type`: `journal`, `conference`, `workshop`, or `poster`.
-- `cites`: Google Scholar citation count. `faculty`: which PATENT faculty are authors (`rahimi`, `mittal`, `amiri`, `neupane`). `labs`: `["brains"]` for BRAINS Lab papers. These fields drive the filters and the "Most cited" sort.
+- `cites`: Google Scholar citation count. `faculty`: which PATENT faculty are authors (`rahimi`, `mittal`, `golilarz`, `neupane`). These fields drive the filters and the "Most cited" sort.
 - `topics` drive the filters: `security`, `healthcare`, `cps`, `vision`, `xai`.
 - `authors`, `venue`, `award`, and `status` are optional. Current lab members' names appear in bold automatically.
 - The home page publication count and lab member count are read from these files, so they stay current.
 
 **What's included:** journal and conference papers from 2021 onward on the Google Scholar profiles of Drs. Rahimi, Mittal, Amiri Golilarz, and Neupane, with duplicate versions merged. Preprints, theses, books, patents, and grant records are left out.
+
+**Partner lab:** the BRAINS Lab (sites.ua.edu/brains) is a partner, not part of PATENT. Its papers count as PATENT publications only when Dr. Rahimi or Dr. Mittal is a co-author; the sync script applies this rule (`partner_lab_*` in `scripts/scholar_config.json`). The site links to BRAINS from the footer and the About page only.
 
 ### Weekly Google Scholar sync
 
@@ -95,7 +96,7 @@ Edit [`assets/data/publications.json`](assets/data/publications.json). The list 
 
 ### Highlights, awards, and posters
 
-- [`assets/data/highlights.json`](assets/data/highlights.json) lists the most-cited papers shown as poster cards. `match` is the beginning of the paper's title in `publications.json`. The figures in `assets/img/highlights/` come from each paper's arXiv version.
+- **Highlights choose themselves.** The poster cards always show the six most-cited papers in `publications.json` (posters excluded), so they stay correct after every weekly sync. [`assets/data/highlights.json`](assets/data/highlights.json) only adds details, matched by the start of the title: a short title, a summary, a figure, a taxonomy, or an `illustration` topic, plus a `paper` link. Figures in `assets/img/highlights/` come from arXiv or open-access (CC BY) versions only; papers without one get a labeled research-area illustration.
 - Award certificates: images are in `assets/img/awards/` and the original PDFs in `assets/docs/awards/`. The cards are written into `index.html` and `publications.html`.
 - **Posters:** add an entry to [`assets/data/posters.json`](assets/data/posters.json). Put a portrait image, about 1200px wide, in `assets/img/posters/`, and optionally the PDF in `assets/docs/posters/`:
 
@@ -123,6 +124,7 @@ The form on `contact.html` sends messages to **cs-patent@ua.edu** through [FormS
 | `funding.html` | Current and past awards (NSF records), the McKay endowment, sponsors |
 | `about.html` | History of the lab at MSU and UA, interdisciplinary scope |
 | `contact.html` | Contact details, contact form, and how to join |
+| `accessibility.html` | Accessibility statement and how to report problems |
 | `404.html` | Not-found page (uses root-relative links) |
 
 Every page repeats the same navigation and footer. If you change one, update all of them.
@@ -134,7 +136,18 @@ Every page repeats the same navigation and footer. If you change one, update all
   - `patent-mark.svg`: the crest mark, a shield with a P and an analytics bar chart.
   - `patent-lockup-light.svg` and `patent-lockup-dark.svg`: the full logo for light and dark backgrounds.
 - **UA marks:** the nav shows UA's official Capstone A (Script A ®), and the footer shows the official UA wordmark. The unmodified files come from `assetfiles.ua.edu/brand/logos/` and live in `assets/img/ua/`. UA's rules require the Capstone A to appear with the University nameplate on the same page, so keep both. Don't recolor, redraw, or alter them; for other versions, contact Strategic Communications (brand.ua.edu).
+- **Sponsor logos:** only the NSF logo is shown, using nsf.gov's official full-color file in `assets/img/sponsors/`. NSF requires award recipients to use it ([NSF brand policy](https://www.nsf.gov/policies/brand)), and the Funding page carries NSF's standard acknowledgment text; add new NSF award numbers there. Other agencies (NSA, DoD, the Army, ERDC, DOE) restrict their seals; NSA's is protected by 50 U.S.C. § 3613. Show them as text tiles until the agency grants permission, then add the file to `SPONSOR_LOGOS` in the page generator.
 - The research simulations live in `assets/js/sims.js`. Any element with `data-sim="security|healthcare|cps|vision|training"` gets a canvas. The SVG inside it is the fallback. `data-compact` hides the text overlays.
 - Motion follows the scroll position, using CSS scroll-driven animations where the browser supports them and a small JavaScript fallback elsewhere. It animates only `opacity` and `transform`.
 - If the visitor's system asks for reduced motion, all motion is turned off.
 - Lab at Mississippi State: <https://patent.cse.msstate.edu>
+
+## Accessibility
+
+The site targets **WCAG 2.2 Level AA**. As a public university site, it falls under the ADA Title II web rule, which requires WCAG 2.1 AA.
+
+- Every page passes an [axe-core](https://github.com/dequelabs/axe-core) audit (WCAG 2.2 A/AA and best practices) with zero violations, in both light and dark themes, and reflows at 320px with no sideways scrolling. Re-run both checks after major changes.
+- **Built in:** a skip link; landmarks and an ordered heading structure; visible focus; labels on every control; `aria-live` result counts; links that announce "opens in a new tab"; and scroll padding so sticky bars never hide the focused element.
+- **Motion:** respects `prefers-reduced-motion`. The pause button in the nav stops all animation and is remembered (WCAG 2.2.2), and each simulation also has its own Pause button.
+- **Contrast:** AA in both themes, extra contrast under `prefers-contrast: more`, and a solid-text fallback in Windows high-contrast mode (`forced-colors`).
+- When you add content: write alt text for images, keep heading levels in order, and give PDFs a text equivalent on the page, as the award cards do.

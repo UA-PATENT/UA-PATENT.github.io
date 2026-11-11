@@ -264,8 +264,9 @@ def build_publications(profiles, faculty, old, cfg):
             best[kb]["cites"] = max(best[kb].get("cites", 0), gone.get("cites", 0))
 
     fac_names = {name_key(n): s for s, n in ((s, n) for s, n in faculty_names.items())}
-    brains = [key(t) for t in cfg.get("brains_titles", [])]
-    director = cfg.get("brains_director_slug", "golilarz")
+    partner = [key(t) for t in cfg.get("partner_lab_titles", [])]
+    p_fac, p_since = cfg.get("partner_lab_faculty", "golilarz"), cfg.get("partner_lab_since", 2025)
+    requires = set(cfg.get("partner_lab_requires", ["rahimi", "mittal"]))
     pubs = list(best.values())
     for p in pubs:
         authors = {name_key(a) for a in p.get("authors", "").split(", ") if a and a != "..."}
@@ -274,7 +275,11 @@ def build_publications(profiles, faculty, old, cfg):
         p["faculty"] = sorted(from_authors) if p.get("curated") else sorted(set(p.get("faculty", [])) | from_authors)
         p["topics"] = topics(p["title"])
         k = key(p["title"])
-        p["labs"] = ["brains"] if any(k.startswith(b) or b.startswith(k) for b in brains) or (p["faculty"] == [director] and p["year"] >= 2025) else []
+        p.pop("labs", None)
+        # partner-lab (BRAINS) papers count only with a PATENT core faculty co-author
+        is_partner = any(k.startswith(b) or b.startswith(k) for b in partner) or (p["faculty"] == [p_fac] and p["year"] >= p_since)
+        p["_drop"] = is_partner and not (set(p["faculty"]) & requires) and not p.get("curated")
+    pubs = [p for p in pubs if not p.pop("_drop")]
     order = {"journal": 0, "conference": 1, "workshop": 2, "poster": 3}
     pubs.sort(key=lambda p: (-p["year"], order.get(p["type"], 9), p["title"].lower()))
     return pubs, excluded
@@ -359,13 +364,12 @@ def main():
     m["lab"] = {"publications": len(pubs), "citations": sum(p.get("cites", 0) for p in pubs),
                 "journal": sum(p["type"] == "journal" for p in pubs),
                 "conference": sum(p["type"] in ("conference", "workshop") for p in pubs),
-                "posters": sum(p["type"] == "poster" for p in pubs),
-                "brains": sum("brains" in p.get("labs", []) for p in pubs)}
+                "posters": sum(p["type"] == "poster" for p in pubs)}
     save(METRICS, m)
 
     print(f"Profiles: " + ", ".join(f"{targets[s][0]}={v}" for s, v in status.items()))
     print(f"Publications: {m['lab']['publications']} ({m['lab']['journal']} journal, {m['lab']['conference']} conference), "
-          f"citations {m['lab']['citations']}, BRAINS {m['lab']['brains']}; excluded {len(excluded)} Scholar rows")
+          f"citations {m['lab']['citations']}; excluded {len(excluded)} Scholar rows")
 
 
 if __name__ == "__main__":

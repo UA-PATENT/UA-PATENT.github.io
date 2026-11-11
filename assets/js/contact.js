@@ -63,3 +63,33 @@
     });
   });
 })();
+
+/* Choose the form topic from ?topic=… (links from other pages) or data-topic (buttons on this page), then focus the form */
+(function () {
+  'use strict';
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+  var select = form.querySelector('select[name="topic"]');
+  var name = form.querySelector('input[name="name"]');
+  function choose(topic) {
+    if (!topic || !select) return;
+    for (var i = 0; i < select.options.length; i++) {
+      if (select.options[i].text === topic) { select.selectedIndex = i; break; }
+    }
+  }
+  function goToForm() {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.classList.contains('motion-paused');
+    form.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    if (name) name.focus({ preventScroll: true });
+  }
+  var t = new URLSearchParams(location.search).get('topic');
+  if (t) { choose(t); if (location.hash === '#contact-form' && name) name.focus({ preventScroll: true }); }
+  document.querySelectorAll('[data-topic][href="#contact-form"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      choose(a.getAttribute('data-topic'));
+      history.replaceState(null, '', '#contact-form');
+      goToForm();
+    });
+  });
+})();

@@ -35,7 +35,6 @@
     return '<a class="icon-btn" href="' + esc(url) + '"' + ext + ' aria-label="' + labels[kind] + esc(name) + '" title="' + (kind === 'email' ? esc(href) : labels[kind].replace(/ of $/, '')) + '">' + ICONS[kind] + '</a>';
   }
 
-  var LABS = { brains: { name: 'BRAINS Lab', href: 'research.html#brains' } };
   var metrics = {};
 
   function fmt(n) { return Number(n).toLocaleString('en-US'); }
@@ -44,14 +43,12 @@
     var links = ['email', 'scholar', 'linkedin', 'website']
       .filter(function (k) { return p[k]; })
       .map(function (k) { return link(k, p[k], p.name); }).join('');
-    var lab = p.lab && LABS[p.lab] ? '<a class="lab-tag" href="' + LABS[p.lab].href + '">' + LABS[p.lab].name + '</a>' : '';
     var sid = /user=([\w-]+)/.exec(p.scholar || '');
     var m = sid && metrics[sid[1]];
     var stats = m ? '<p class="person__stats" title="Google Scholar, all time"><span><b>' + fmt(m.citations) + '</b> citations</span><span><b>' + m.hIndex + '</b> h-index</span></p>' : '';
     return '<li class="person reveal" style="--d:' + (i % 4) * 0.06 + 's">' +
       portrait(p, i < 4) +
       '<div class="person__body">' +
-        lab +
         '<h3 class="person__name">' + esc(p.name) + '</h3>' +
         '<p class="person__role">' + esc(p.role || '') + '</p>' +
         (p.office ? '<p class="person__office">' + esc(p.office) + '</p>' : '') +
@@ -77,6 +74,8 @@
       }).join('');
       mount.innerHTML = html;
       mount.removeAttribute('aria-busy');
+      /* sections are rendered after load, so honor links like people.html#g-faculty now */
+      if (location.hash) { var t = document.getElementById(location.hash.slice(1)); if (t) t.scrollIntoView({ block: 'start' }); }
       if (window.PATENT && window.PATENT.observe) window.PATENT.observe(mount.querySelectorAll('.reveal'));
     })
     .catch(function () {
