@@ -15,10 +15,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=4e502369">
 <script>(function(){var d=document.documentElement,t;d.className=d.className.replace('no-js','js');try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';d.setAttribute('data-theme',t);try{if(localStorage.getItem('motion')==='paused')d.classList.add('motion-paused')}catch(e){}})();</script>
-<script src="assets/js/main.js" defer></script>
-<script src="assets/js/contact.js" defer></script>
+<script src="assets/js/main.js?v=bb76cafc" defer></script>
+<script src="assets/js/contact.js?v=a990d8ee" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -116,7 +116,13 @@
           <div class="join__actions"><a class="btn btn--crimson" href="#contact-form" data-topic="Industry or government partnership">Send us a message</a><a class="link-arrow" href="funding.html">Our funding</a></div>
         </div>
       </div>
-      <p class="join__direct reveal">Prefer email or phone? Write to <a href="mailto:cs-patent@ua.edu">cs-patent@ua.edu</a> or call <a href="tel:+12053486363">(205) 348-6363</a>.</p>
+      <div class="join__direct reveal">
+        <p>Prefer email or phone?</p>
+        <div class="join__contacts">
+          <a class="pill-link" href="mailto:cs-patent@ua.edu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>cs-patent@ua.edu</a>
+          <a class="pill-link" href="tel:+12053486363"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>(205) 348-6363</a>
+        </div>
+      </div>
       <p class="lead reveal" style="margin-top:24px">Looking for the lab at Mississippi State? <a class="link-arrow" href="https://patent.cse.msstate.edu/contact/" target="_blank" rel="noopener">Contact PATENT at MSU</a></p>
     </div>
   </section>

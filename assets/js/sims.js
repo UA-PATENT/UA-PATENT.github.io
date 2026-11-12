@@ -98,7 +98,7 @@
     label(ctx, 'IDS', hub.x, hub.y + 1, big ? 10 : 8, '#fff', 'center');
     if (big) label(ctx, 'inspected ' + this.inspected.toLocaleString() + ' · blocked ' + this.blocked, 12, h - 14, 10, C.muted);
     if (this.explain && w > 220 && !this.compact) {
-      var e = this.explain, a = Math.min(1, e.life * 2), pw = Math.min(170, w * .5), px = w - pw - 10, py = 10;
+      var e = this.explain, a = Math.min(1, e.life * 2), pw = Math.min(170, w * .5), px = w - pw - 10, py = 48;
       ctx.globalAlpha = a;
       rr(ctx, px, py, pw, 66, 8); ctx.fillStyle = C.dark ? 'rgba(20,16,17,.92)' : 'rgba(255,255,255,.95)'; ctx.fill(); ctx.strokeStyle = C.border; ctx.lineWidth = 1; ctx.stroke();
       label(ctx, 'Blocked · ' + e.a.name, px + 9, py + 12, 10, C.accent);
@@ -394,16 +394,16 @@
     });
     if (!big) return;
     var sx = w - side, lh = h * .42, ly = h - lh - 30;
-    label(ctx, 'dataset · ' + this.kind, sx, 16, 10, C.muted);
-    label(ctx, 'epoch ' + this.epoch, sx, 36, 13, C.text);
-    label(ctx, 'accuracy ' + Math.round(this.acc * 100) + '%', sx, 56, 13, this.acc > .97 ? C.accent : C.text);
-    label(ctx, 'loss ' + (this.loss[this.loss.length - 1] || 0).toFixed(3), sx, 76, 13, C.text);
+    label(ctx, 'dataset · ' + this.kind, sx, 50, 10, C.muted);
+    label(ctx, 'epoch ' + this.epoch, sx, 70, 13, C.text);
+    label(ctx, 'accuracy ' + Math.round(this.acc * 100) + '%', sx, 90, 13, this.acc > .97 ? C.accent : C.text);
+    label(ctx, 'loss ' + (this.loss[this.loss.length - 1] || 0).toFixed(3), sx, 110, 13, C.text);
     rr(ctx, sx, ly, side, lh, 8); ctx.fillStyle = C.faint; ctx.fill();
     var mx = Math.max.apply(null, this.loss.concat([.7]));
     ctx.beginPath(); this.loss.forEach(function (l, i) { var px = sx + 6 + i / 240 * (side - 12), py = ly + lh - 6 - l / mx * (lh - 12); i ? ctx.lineTo(px, py) : ctx.moveTo(px, py); });
     ctx.strokeStyle = C.accent; ctx.lineWidth = 1.8; ctx.stroke();
     label(ctx, 'training loss', sx, ly + lh + 14, 9.5, C.muted);
-    if (this.done) label(ctx, 'converged ✓', sx, 96, 11, C.accent);
+    if (this.done) label(ctx, 'converged ✓', sx, 130, 11, C.accent);
   };
 
   /* ------------------------------------------------------------------ runner */
@@ -435,15 +435,22 @@
     function start() { if (!raf && !reduce && !paused) { last = 0; raf = requestAnimationFrame(frame); } }
     function setPaused(p) {
       paused = p;
-      if (btn) { btn.textContent = p ? 'Play' : 'Pause'; btn.setAttribute('aria-pressed', String(p)); btn.setAttribute('aria-label', (p ? 'Play' : 'Pause') + ' this simulation'); }
+      if (btn) {
+        var what = el.getAttribute('data-name') || 'this simulation';
+        btn.innerHTML = (p ? '<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg>Play'
+                           : '<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1.2"/><rect x="14" y="5" width="4" height="14" rx="1.2"/></svg>Pause');
+        btn.setAttribute('aria-pressed', String(p)); btn.setAttribute('aria-label', (p ? 'Play ' : 'Pause ') + what);
+      }
       if (!p && visible) start();
     }
     var btn = null;
-    if (!reduce && !el.hasAttribute('data-compact')) {
+    if (!reduce) {
       btn = document.createElement('button');
-      btn.type = 'button'; btn.className = 'sim__toggle';
-      btn.addEventListener('click', function () { setPaused(!paused); });
-      el.appendChild(btn);
+      btn.type = 'button';
+      btn.className = 'sim__toggle' + (el.hasAttribute('data-compact') ? ' sim__toggle--tile' : '');
+      btn.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); setPaused(!paused); });
+      /* inside a home-page card, the button sits on the card itself so it stays above the card's link */
+      (el.closest('.tile') || el).appendChild(btn);
     }
     setPaused(paused);
     document.addEventListener('patent:motion', function (e) { setPaused(e.detail.paused); });

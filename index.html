@@ -15,11 +15,11 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=4e502369">
 <script>(function(){var d=document.documentElement,t;d.className=d.className.replace('no-js','js');try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';d.setAttribute('data-theme',t);try{if(localStorage.getItem('motion')==='paused')d.classList.add('motion-paused')}catch(e){}})();</script>
-<script src="assets/js/main.js" defer></script>
-<script src="assets/js/highlights.js" defer></script>
-<script src="assets/js/sims.js" defer></script>
+<script src="assets/js/main.js?v=bb76cafc" defer></script>
+<script src="assets/js/highlights.js?v=afa6ad34" defer></script>
+<script src="assets/js/sims.js?v=cbb3808c" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -64,7 +64,7 @@
       <p class="statement"><span class="statement__fill">At PATENT, we build <em>explainable, data-driven AI</em> for healthcare, cybersecurity, robotics, and computer vision, turning complex data into predictions people can trust and act on.</span></p>
       <dl class="stats">
         <div class="stat reveal"><dt>Publications since 2021</dt><dd data-count-pubs>139</dd></div>
-        <div class="stat reveal" style="--d:.06s"><dt>Citations to those papers</dt><dd data-count-citations>4,240</dd></div>
+        <div class="stat reveal" style="--d:.06s"><dt>Citations to those papers</dt><dd data-count-citations>4,243</dd></div>
         <div class="stat reveal" style="--d:.12s"><dt>Lab members</dt><dd data-count-members>12</dd></div>
         <div class="stat reveal" style="--d:.18s"><dt>Paper awards in 2026</dt><dd data-count="3">3</dd></div>
       </dl>
@@ -78,34 +78,34 @@
         <h2 id="areas" class="display">Four areas. One idea: AI you can explain.</h2>
       </div>
       <div class="bento">
-        <a class="tile tile--wide reveal" href="research.html#security">
-          <div class="tile__art sim" data-compact data-sim="security" data-label="Simulation: packets flow through an intrusion detection system; attacks are blocked with an explanation of the features behind each alert."><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="draw" style="--len:520" d="M100 18 166 42v52c0 44-28 76-66 88-38-12-66-44-66-88V42Z"/><path class="draw" style="--len:400" opacity=".45" d="M100 42 144 58v38c0 30-18 52-44 62-26-10-44-32-44-62V58Z"/><path class="draw" style="--len:110" stroke-width="3.2" d="m80 100 14 14 28-30"/><g fill="currentColor" stroke="none" opacity=".5"><circle cx="20" cy="150" r="2"/><circle cx="34" cy="166" r="2"/><circle cx="180" cy="150" r="2"/><circle cx="168" cy="168" r="2"/><circle cx="186" cy="128" r="2"/><circle cx="14" cy="126" r="2"/></g></svg></div>
+        <article class="tile tile--wide reveal">
+          <div class="tile__art sim" data-compact data-name="the cybersecurity simulation" data-sim="security" data-label="Simulation: packets flow through an intrusion detection system; attacks are blocked with an explanation of the features behind each alert."><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="draw" style="--len:520" d="M100 18 166 42v52c0 44-28 76-66 88-38-12-66-44-66-88V42Z"/><path class="draw" style="--len:400" opacity=".45" d="M100 42 144 58v38c0 30-18 52-44 62-26-10-44-32-44-62V58Z"/><path class="draw" style="--len:110" stroke-width="3.2" d="m80 100 14 14 28-30"/><g fill="currentColor" stroke="none" opacity=".5"><circle cx="20" cy="150" r="2"/><circle cx="34" cy="166" r="2"/><circle cx="180" cy="150" r="2"/><circle cx="168" cy="168" r="2"/><circle cx="186" cy="128" r="2"/><circle cx="14" cy="126" r="2"/></g></svg></div>
           <span class="eyebrow">01</span>
           <h3>Cybersecurity</h3>
           <p>Explainable intrusion detection, agentic AI for incident response, threat intelligence, and securing the machine-learning pipeline itself.</p>
-          <span class="link-arrow">Explore</span>
-        </a>
-        <a class="tile tile--narrow reveal" style="--d:.08s" href="research.html#healthcare">
-          <div class="tile__art sim" data-compact data-sim="healthcare" data-label="Simulation: a live ECG trace; irregular heartbeats are flagged and raise a risk score."><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="draw" style="--len:380" d="M6 112h46l12-30 16 62 18-96 16 82 10-18h70"/><circle class="pulse-dot" cx="188" cy="112" r="5" fill="currentColor" stroke="none"/><path opacity=".3" d="M6 150h188M6 74h188"/></svg></div>
+          <a class="link-arrow tile__link" href="research.html#security">Explore<span class="sr-only"> cybersecurity research</span></a>
+        </article>
+        <article class="tile tile--narrow reveal" style="--d:.08s">
+          <div class="tile__art sim" data-compact data-name="the healthcare simulation" data-sim="healthcare" data-label="Simulation: a live ECG trace; irregular heartbeats are flagged and raise a risk score."><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="draw" style="--len:380" d="M6 112h46l12-30 16 62 18-96 16 82 10-18h70"/><circle class="pulse-dot" cx="188" cy="112" r="5" fill="currentColor" stroke="none"/><path opacity=".3" d="M6 150h188M6 74h188"/></svg></div>
           <span class="eyebrow">02</span>
           <h3>Healthcare</h3>
           <p>Patient-centric knowledge graphs, clinical language models, and interpretable risk prediction.</p>
-          <span class="link-arrow">Explore</span>
-        </a>
-        <a class="tile tile--half reveal" href="research.html#cps">
-          <div class="tile__art sim" data-compact data-sim="cps" data-label="Simulation: a robot plans a path with the A-star algorithm and replans when an obstacle appears."><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="draw" style="--len:420" d="M30 160 70 110l50 20 50-80"/><path class="draw" style="--len:300" opacity=".45" d="M70 110 60 50l60-10 50 10M120 130l10 40"/><g fill="currentColor" stroke="none"><circle cx="30" cy="160" r="6"/><circle cx="70" cy="110" r="6"/><circle cx="120" cy="130" r="6"/><circle class="pulse-dot" cx="170" cy="50" r="7"/><circle cx="60" cy="50" r="4" opacity=".6"/><circle cx="120" cy="40" r="4" opacity=".6"/><circle cx="130" cy="170" r="4" opacity=".6"/></g></svg></div>
+          <a class="link-arrow tile__link" href="research.html#healthcare">Explore<span class="sr-only"> healthcare research</span></a>
+        </article>
+        <article class="tile tile--half reveal">
+          <div class="tile__art sim" data-compact data-name="the robotics and cyber-physical systems simulation" data-sim="cps" data-label="Simulation: a robot plans a path with the A-star algorithm and replans when an obstacle appears."><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="draw" style="--len:420" d="M30 160 70 110l50 20 50-80"/><path class="draw" style="--len:300" opacity=".45" d="M70 110 60 50l60-10 50 10M120 130l10 40"/><g fill="currentColor" stroke="none"><circle cx="30" cy="160" r="6"/><circle cx="70" cy="110" r="6"/><circle cx="120" cy="130" r="6"/><circle class="pulse-dot" cx="170" cy="50" r="7"/><circle cx="60" cy="50" r="4" opacity=".6"/><circle cx="120" cy="40" r="4" opacity=".6"/><circle cx="130" cy="170" r="4" opacity=".6"/></g></svg></div>
           <span class="eyebrow">03</span>
           <h3>Robotics &amp; Cyber-Physical Systems</h3>
           <p>Predictive maintenance, digital twins, and autonomy in unstructured, off-road environments.</p>
-          <span class="link-arrow">Explore</span>
-        </a>
-        <a class="tile tile--half reveal" style="--d:.08s" href="research.html#vision">
-          <div class="tile__art sim" data-compact data-sim="vision" data-label="Simulation: an object detector tracks moving objects with labeled bounding boxes."><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 52V28h24M156 28h24v24M180 148v24h-24M44 172H20v-24"/><rect class="draw" style="--len:360" x="62" y="66" width="86" height="70" rx="6"/><path opacity=".35" d="M20 100h160"/><circle class="pulse-dot" cx="105" cy="101" r="5" fill="currentColor" stroke="none"/><path class="draw" style="--len:200" opacity=".55" d="M62 120c20-18 40-24 86-10"/></svg></div>
+          <a class="link-arrow tile__link" href="research.html#cps">Explore<span class="sr-only"> robotics and cyber-physical systems research</span></a>
+        </article>
+        <article class="tile tile--half reveal" style="--d:.08s">
+          <div class="tile__art sim" data-compact data-name="the computer vision simulation" data-sim="vision" data-label="Simulation: an object detector tracks moving objects with labeled bounding boxes."><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 52V28h24M156 28h24v24M180 148v24h-24M44 172H20v-24"/><rect class="draw" style="--len:360" x="62" y="66" width="86" height="70" rx="6"/><path opacity=".35" d="M20 100h160"/><circle class="pulse-dot" cx="105" cy="101" r="5" fill="currentColor" stroke="none"/><path class="draw" style="--len:200" opacity=".55" d="M62 120c20-18 40-24 86-10"/></svg></div>
           <span class="eyebrow">04</span>
           <h3>Computer Vision</h3>
           <p>Seeing terrain, obstacles, and disease, from aerial imagery and LiDAR to MRI.</p>
-          <span class="link-arrow">Explore</span>
-        </a>
+          <a class="link-arrow tile__link" href="research.html#vision">Explore<span class="sr-only"> computer vision research</span></a>
+        </article>
       </div>
     </div>
   </section>

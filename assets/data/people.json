@@ -91,7 +91,9 @@
    "role": "PhD Student",
    "group": "phd",
    "email": "toakinrele@crimson.ua.edu",
-   "scholar": "https://scholar.google.com/citations?user=ZtndUIAAAAAJ&hl=en"
+   "scholar": "https://scholar.google.com/citations?user=ZtndUIAAAAAJ&hl=en",
+   "linkedin": "https://www.linkedin.com/in/tayeakinrele/",
+   "photo": "assets/img/people/taye-akinrele"
   },
   {
    "name": "Charlotte Crowell",
@@ -102,9 +104,12 @@
    "linkedin": "https://www.linkedin.com/in/charlottecrowell/"
   },
   {
-   "name": "Maryam Aghdam",
+   "name": "Maryam Akhavan Aghdam",
    "role": "PhD Student",
-   "group": "phd"
+   "group": "phd",
+   "email": "makhavanaghdam@crimson.ua.edu",
+   "scholar": "https://scholar.google.com/citations?user=xe0N6H8AAAAJ&hl=en",
+   "linkedin": "https://www.linkedin.com/in/maryam-akhavan-aghdam/"
   },
   {
    "name": "Sagar Neupane",

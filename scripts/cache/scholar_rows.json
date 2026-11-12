@@ -1,12 +1,12 @@
 {
-"fetched": "2026-11-11",
+"fetched": "2026-11-12",
 "profiles": {
 "EbML-C0AAAAJ": {
 "name": "Subash Neupane",
 "metrics": {
 "Citations": {
-"all": 1199,
-"since": 1199
+"all": 1201,
+"since": 1201
 },
 "h-index": {
 "all": 16,
@@ -279,7 +279,7 @@
 "authors": "HSA Khatib, S Neupane, HK Manchukonda, NA Golilarz, S Mittal, ...",
 "venue": "Frontiers in Artificial Intelligence",
 "year": 2024,
-"cites": 65,
+"cites": 66,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:eQOLeE2rZwMC"
 },
 {
@@ -359,7 +359,7 @@
 "authors": "S Neupane, J Ables, W Anderson, S Mittal, S Rahimi",
 "venue": "IEEE Access 2022",
 "year": 2022,
-"cites": 430,
+"cites": 431,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EbML-C0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=EbML-C0AAAAJ:u-x6o8ySG0sC"
 },
 {
@@ -424,8 +424,8 @@
 "name": "Sudip Mittal",
 "metrics": {
 "Citations": {
-"all": 6046,
-"since": 5345
+"all": 6054,
+"since": 5352
 },
 "h-index": {
 "all": 40,
@@ -850,7 +850,7 @@
 "authors": "HS Al Khatib, S Neupane, H Kumar Manchukonda, NA Golilarz, S Mittal, ...",
 "venue": "Frontiers in Artificial Intelligence 7, 1388479",
 "year": 2024,
-"cites": 65,
+"cites": 66,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:eJXPG6dFmWUC"
 },
 {
@@ -1002,7 +1002,7 @@
 "authors": "C Moore, S Mitra, N Pillai, M Moore, S Mittal, C Bethel, J Chen",
 "venue": "arXiv preprint arXiv:2309.08814",
 "year": 2023,
-"cites": 10,
+"cites": 11,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:tS2w5q8j5-wC"
 },
 {
@@ -1154,7 +1154,7 @@
 "authors": "S Neupane, J Ables, W Anderson, S Mittal, S Rahimi, I Banicescu, ...",
 "venue": "IEEE Access 2022",
 "year": 2022,
-"cites": 430,
+"cites": 431,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:CHSYGLWDkRkC"
 },
 {
@@ -1266,7 +1266,7 @@
 "authors": "E Bertino, M Kantarcioglu, CG Akcora, S Samtani, S Mittal, M Gupta",
 "venue": "11th ACM Conference on Data and Application Security and Privacy (ACM …",
 "year": 2021,
-"cites": 138,
+"cites": 139,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:ldfaerwXgEUC"
 },
 {
@@ -1450,7 +1450,7 @@
 "authors": "M Gupta, M Abdelsalam, S Khorsandroo, S Mittal",
 "venue": "IEEE access 8, 34564-34584",
 "year": 2020,
-"cites": 831,
+"cites": 832,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:r0BpntZqJG4C"
 },
 {
@@ -1482,7 +1482,7 @@
 "authors": "K Joshi, KP Joshi, S Mittal",
 "venue": "2019 IEEE international conference on web services (ICWS), 33-40",
 "year": 2019,
-"cites": 20,
+"cites": 21,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:TQgYirikUcIC"
 },
 {
@@ -1602,7 +1602,7 @@
 "authors": "KP Joshi, A Gupta, S Mittal, C Pearce, A Joshi, T Finin",
 "venue": "2016 IEEE International Conference on Big Data (Big Data), 482-491",
 "year": 2016,
-"cites": 43,
+"cites": 44,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:-f6ydRqryjwC"
 },
 {
@@ -1634,7 +1634,7 @@
 "authors": "A Gupta, S Mittal, KP Joshi, C Pearce, A Joshi",
 "venue": "2016 IEEE 9th International Conference on Cloud Computing (CLOUD), 481-488",
 "year": 2016,
-"cites": 18,
+"cites": 19,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HxIicawAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=HxIicawAAAAJ:qUcmZB5y_30C"
 },
 {
@@ -1707,8 +1707,8 @@
 "name": "Noorbakhsh Amiri Golilarz",
 "metrics": {
 "Citations": {
-"all": 3613,
-"since": 3127
+"all": 3614,
+"since": 3128
 },
 "h-index": {
 "all": 29,
@@ -1729,12 +1729,36 @@
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:XiVPGOgt02cC"
 },
 {
+"title": "Pose-Based Attention and Multiple Instance Learning for Pitch Tipping Detection",
+"authors": "R Rouco-Crenshaw, K Rainey, NA Golilarz",
+"venue": "International Congress on Information and Communication Technology, 359-370",
+"year": 2027,
+"cites": 0,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:AXPGKjj_ei8C"
+},
+{
+"title": "Adaptive Hebbian Memory Routing in Vision Transformers for Few-Shot Learning",
+"authors": "MY Mujawar, NA Golilarz",
+"venue": "2026 25th International Conference on Machine Learning and Applications (ICMLA)",
+"year": 2026,
+"cites": 1,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:geHnlv5EZngC"
+},
+{
 "title": "FORESEE-MS: Toward Prospective Spatial Forecasting of Future Multiple Sclerosis Lesions from Baseline FLAIR MRI",
 "authors": "MA Aghdam, S Mittal, NA Golilarz, S Rahimi",
 "venue": "arXiv preprint arXiv:2610.36428",
 "year": 2026,
 "cites": 0,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:t6usbXjVLHcC"
+},
+{
+"title": "Bridging the gap: Toward cognitive autonomy in artificial intelligence",
+"authors": "NA Golilarz, S Penchala, S Rahimi",
+"venue": "2026 ICICT",
+"year": 2026,
+"cites": 6,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:KxtntwgDAa4C"
 },
 {
 "title": "Artificial Intelligence Agents: A Structural Review of Frameworks, Core Components, and Open Challenges",
@@ -1857,14 +1881,6 @@
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:LPZeul_q3PIC"
 },
 {
-"title": "Adaptive Hebbian Memory Routing in Vision Transformers for Few-Shot Learning",
-"authors": "MY Mujawar, NA Golilarz",
-"venue": "arXiv preprint arXiv:2606.24756",
-"year": 2026,
-"cites": 1,
-"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:geHnlv5EZngC"
-},
-{
 "title": "From Convolution to Transformer: A Comparative Study of U-Net Variants for Brain Tumor and Retinal Vessel Segmentation",
 "authors": "K Pham, S Penchala, J Li, A Perkins, NA Golilarz",
 "venue": "arXiv preprint arXiv:2606.22168",
@@ -1911,22 +1927,6 @@
 "year": 2026,
 "cites": 1,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:kRWSkSYxWN8C"
-},
-{
-"title": "Pose-Based Attention and Multiple Instance Learning for Pitch Tipping Detection",
-"authors": "R Rouco-Crenshaw, K Rainey, NA Golilarz",
-"venue": "International Congress on Information and Communication Technology, 359-370",
-"year": 2026,
-"cites": 0,
-"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:AXPGKjj_ei8C"
-},
-{
-"title": "Bridging the gap: Toward cognitive autonomy in artificial intelligence",
-"authors": "NA Golilarz, S Penchala, S Rahimi",
-"venue": "2026 ICICT",
-"year": 2026,
-"cites": 6,
-"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:KxtntwgDAa4C"
 },
 {
 "title": "Learning in Focus: Detecting Behavioral and Collaborative Engagement Using Vision Transformers",
@@ -2101,7 +2101,7 @@
 "authors": "HS Al Khatib, S Neupane, H Kumar Manchukonda, NA Golilarz, S Mittal, ...",
 "venue": "Frontiers in Artificial Intelligence 7, 1388479",
 "year": 2024,
-"cites": 65,
+"cites": 66,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aNPnv24AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=aNPnv24AAAAJ:g5m5HwL7SMYC"
 },
 {
@@ -2502,8 +2502,8 @@
 "name": "Shahram Rahimi",
 "metrics": {
 "Citations": {
-"all": 4948,
-"since": 3410
+"all": 4950,
+"since": 3412
 },
 "h-index": {
 "all": 34,
@@ -3160,7 +3160,7 @@
 "authors": "HS Al Khatib, S Neupane, H Kumar Manchukonda, NA Golilarz, S Mittal, ...",
 "venue": "Frontiers in Artificial Intelligence 7, 1388479",
 "year": 2024,
-"cites": 65,
+"cites": 66,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:wMgC3FpKEyYC"
 },
 {
@@ -3456,7 +3456,7 @@
 "authors": "S NEUPANE, S ABLES, JESSE, ANDERSON, WILLIAM, MITTAL, ...",
 "venue": "IEEE Access",
 "year": 2022,
-"cites": 430,
+"cites": 431,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cRqh6lwAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=cRqh6lwAAAAJ:mNrWkgRL2YcC"
 },
 {
@@ -4431,8 +4431,8 @@
 "name": "Shaswata Mitra",
 "metrics": {
 "Citations": {
-"all": 547,
-"since": 547
+"all": 548,
+"since": 548
 },
 "h-index": {
 "all": 12,
@@ -4649,7 +4649,7 @@
 "authors": "C Moore, S Mitra, N Pillai, M Moore, S Mittal, C Bethel, J Chen",
 "venue": "https://arxiv.org/abs/2309.08814",
 "year": 2023,
-"cites": 10,
+"cites": 11,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=drsx2nkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=drsx2nkAAAAJ:qjMakFHDy7sC"
 },
 {
@@ -4801,6 +4801,89 @@
 "year": 2025,
 "cites": 5,
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=l-qKGlsAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=l-qKGlsAAAAJ:u5HHmVD_uO8C"
+}
+]
+},
+"xe0N6H8AAAAJ": {
+"name": "Maryam Akhavan Aghdam",
+"metrics": {
+"Citations": {
+"all": 403,
+"since": 359
+},
+"h-index": {
+"all": 5,
+"since": 5
+},
+"i10-index": {
+"all": 5,
+"since": 5
+}
+},
+"rows": [
+{
+"title": "FORESEE-MS: Toward Prospective Spatial Forecasting of Future Multiple Sclerosis Lesions from Baseline FLAIR MRI",
+"authors": "MA Aghdam, S Mittal, NA Golilarz, S Rahimi",
+"venue": "arXiv preprint arXiv:2610.36428",
+"year": 2026,
+"cites": 0,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xe0N6H8AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=xe0N6H8AAAAJ:YOwf2qJgpHMC"
+},
+{
+"title": "Machine-learning models for Alzheimer’s disease diagnosis using neuroimaging data: survey, reproducibility, and generalizability evaluation",
+"authors": "MA Aghdam, S Bozdag, F Saeed, ...",
+"venue": "Brain informatics 12 (1), 8",
+"year": 2025,
+"cites": 78,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xe0N6H8AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=xe0N6H8AAAAJ:kNdYIx-mwKoC"
+},
+{
+"title": "Alzheimer’s disease diagnosis using gray matter of T1‐weighted sMRI data and vision transformer",
+"authors": "MA Aghdam, S Bozdag, F Saeed",
+"venue": "Alzheimer's & Dementia 20, e089944",
+"year": 2024,
+"cites": 2,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xe0N6H8AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=xe0N6H8AAAAJ:eQOLeE2rZwMC"
+},
+{
+"title": "Effective diversity optimizations for high accuracy deep ensembles",
+"authors": "H Jin, MA Aghdam, SNC Medikonduru, W Wei, X Wang, W Zhang, Y Wu",
+"venue": "2024 IEEE 6th International Conference on Cognitive Machine Intelligence …",
+"year": 2024,
+"cites": 3,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xe0N6H8AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=xe0N6H8AAAAJ:5nxA0vEk-isC"
+},
+{
+"title": "Da-moe: Towards dynamic expert allocation for mixture-of-experts models",
+"authors": "MA Aghdam, H Jin, Y Wu",
+"venue": "arXiv preprint arXiv:2409.06669",
+"year": 2024,
+"cites": 23,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xe0N6H8AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=xe0N6H8AAAAJ:roLk4NBRz8UC"
+},
+{
+"title": "PVTAD: Alzheimer’s disease diagnosis using pyramid vision transformer applied to white matter of T1-weighted structural MRI data",
+"authors": "MA Aghdam, S Bozdag, F Saeed",
+"venue": "2024 IEEE International Symposium on Biomedical Imaging (ISBI), 1-4",
+"year": 2024,
+"cites": 16,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xe0N6H8AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=xe0N6H8AAAAJ:Y0pCki6q_DkC"
+},
+{
+"title": "Diagnosis of autism spectrum disorders in young children based on resting-state functional magnetic resonance imaging data using convolutional neural networks",
+"authors": "M Akhavan Aghdam, A Sharifi, MM Pedram",
+"venue": "Journal of digital imaging 32, 899-918",
+"year": 2019,
+"cites": 98,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xe0N6H8AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=xe0N6H8AAAAJ:u-x6o8ySG0sC"
+},
+{
+"title": "Combination of rs-fMRI and sMRI data to discriminate autism spectrum disorders in young children using deep belief network",
+"authors": "M Akhavan Aghdam, A Sharifi, MM Pedram",
+"venue": "Journal of digital imaging 31 (6), 895-903",
+"year": 2018,
+"cites": 183,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xe0N6H8AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=xe0N6H8AAAAJ:u5HHmVD_uO8C"
 }
 ]
 }
