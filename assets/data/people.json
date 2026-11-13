@@ -98,8 +98,8 @@
   },
   {
    "name": "Charlotte Crowell",
-   "role": "PhD Student",
-   "group": "phd",
+   "role": "Undergraduate Researcher",
+   "group": "ug",
    "email": "cecrowell@crimson.ua.edu",
    "scholar": "https://scholar.google.com/citations?user=l-qKGlsAAAAJ&hl=en",
    "linkedin": "https://www.linkedin.com/in/charlottecrowell/"
@@ -116,7 +116,9 @@
    "name": "Sagar Neupane",
    "role": "PhD Student",
    "group": "phd",
-   "linkedin": "https://www.linkedin.com/in/sagarneupane/"
+   "scholar": "https://scholar.google.com/citations?user=zAPCf5gAAAAJ&hl=en",
+   "linkedin": "https://www.linkedin.com/in/sagarneupane/",
+   "github": "https://github.com/rootuser0xms"
   },
   {
    "name": "Nazmul Hoque",

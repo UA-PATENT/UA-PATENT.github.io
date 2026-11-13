@@ -4886,6 +4886,57 @@
 "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xe0N6H8AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=xe0N6H8AAAAJ:u5HHmVD_uO8C"
 }
 ]
+},
+"zAPCf5gAAAAJ": {
+"name": "Sagar Neupane",
+"metrics": {
+"Citations": {
+"all": 6,
+"since": 6
+},
+"h-index": {
+"all": 1,
+"since": 1
+},
+"i10-index": {
+"all": 0,
+"since": 0
+}
+},
+"rows": [
+{
+"title": "The PHP2Shell Vulnerability: A Technical Review of Critical RCE Flaws CVE-2026-109618 and CVE-2026-109619",
+"authors": "S Neupane, S Khatiwada",
+"venue": "Available at SSRN 7675640",
+"year": 2026,
+"cites": 0,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zAPCf5gAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=zAPCf5gAAAAJ:Tyk-4Ss8FVUC"
+},
+{
+"title": "Ontology-Grounded Detection of Inter-Agent Contradiction in Multi-Agent Clinical Hand-off Pipelines",
+"authors": "S Neupane, S Khatiwada",
+"venue": "Available at SSRN 7496218",
+"year": 2026,
+"cites": 0,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zAPCf5gAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=zAPCf5gAAAAJ:qjMakFHDy7sC"
+},
+{
+"title": "Detecting and mitigating sql injection vulnerabilities in web applications",
+"authors": "S Neupane",
+"venue": "arXiv preprint arXiv:2506.17245",
+"year": 2025,
+"cites": 6,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zAPCf5gAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=zAPCf5gAAAAJ:2osOgNQ5qMEC"
+},
+{
+"title": "Spatial LSB Steganography in 24-Bit BMP Carriers",
+"authors": "S Neupane",
+"venue": "Available at SSRN 7512438",
+"year": 2016,
+"cites": 0,
+"url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zAPCf5gAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=zAPCf5gAAAAJ:UeHWp8X0CEIC"
+}
+]
 }
 }
 }

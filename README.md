@@ -26,13 +26,14 @@ Edit [`assets/data/people.json`](assets/data/people.json). Each person is one en
   "email": "jdoe@crimson.ua.edu",
   "scholar": "https://scholar.google.com/citations?user=XXXX",
   "linkedin": "https://www.linkedin.com/in/xxxx/",
+  "github": "https://github.com/xxxx",
   "website": "https://example.com",
   "photo": "assets/img/people/jane-doe"
 }
 ```
 
 - `group` must be one of the `id`s in the `groups` list: `faculty`, `phd`, `ms`, `ug`. Empty groups are hidden.
-- `office`, `scholar`, `linkedin`, `website`, and `photo` are optional. Fields you leave out are hidden.
+- `office`, `scholar`, `linkedin`, `github`, `website`, and `photo` are optional. Fields you leave out are hidden.
 - `metrics` (faculty only) is a key into `metrics.json` (`rahimi`, `mittal`, `amiri`, `neupane`). It shows that person's Google Scholar citations and h-index on the card.
 - Without `photo`, the card shows a blank portrait.
 

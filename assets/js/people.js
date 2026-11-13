@@ -9,6 +9,7 @@
     email: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>',
     scholar: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9.5l4 2.36v5.3C5 19.3 8.13 21 12 21s7-1.7 7-3.84v-5.3l2-1.18V17h2V9.5L12 3Zm0 2.32 7.06 4.18L12 13.68 4.94 9.5 12 5.32ZM7 13.04l5 2.96 5-2.96v4.07c-.31.62-2.17 1.89-5 1.89s-4.69-1.27-5-1.89v-4.07Z"/></svg>',
     linkedin: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.83v1.5h.06c.53-.95 1.84-1.95 3.79-1.95 4.05 0 4.8 2.53 4.8 5.83v5.62h-4v-4.98c0-1.19-.02-2.72-1.75-2.72-1.75 0-2.02 1.3-2.02 2.63v5.07h-4v-11Z"/></svg>',
+    github: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>',
     website: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>'
   };
 
@@ -29,7 +30,7 @@
   }
 
   function link(kind, href, name) {
-    var labels = { email: 'Email ', scholar: 'Google Scholar profile of ', linkedin: 'LinkedIn profile of ', website: 'Personal website of ' };
+    var labels = { email: 'Email ', scholar: 'Google Scholar profile of ', linkedin: 'LinkedIn profile of ', github: 'GitHub profile of ', website: 'Personal website of ' };
     var ext = kind === 'email' ? '' : ' target="_blank" rel="noopener"';
     var url = kind === 'email' ? 'mailto:' + href : href;
     return '<a class="icon-btn" href="' + esc(url) + '"' + ext + ' aria-label="' + labels[kind] + esc(name) + '" title="' + (kind === 'email' ? esc(href) : labels[kind].replace(/ of $/, '')) + '">' + ICONS[kind] + '</a>';
@@ -40,7 +41,7 @@
   function fmt(n) { return Number(n).toLocaleString('en-US'); }
 
   function card(p, i) {
-    var links = ['email', 'scholar', 'linkedin', 'website']
+    var links = ['email', 'scholar', 'linkedin', 'github', 'website']
       .filter(function (k) { return p[k]; })
       .map(function (k) { return link(k, p[k], p.name); }).join('');
     var sid = /user=([\w-]+)/.exec(p.scholar || '');
