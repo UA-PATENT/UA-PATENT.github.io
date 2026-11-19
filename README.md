@@ -114,6 +114,10 @@ The form on `contact.html` sends messages to **cs-patent@ua.edu** through [FormS
 
 **One-time activation:** the first message sent through the form triggers a FormSubmit email to cs-patent@ua.edu. Click **Activate Form** in it. Until then, visitors see a link that opens a pre-filled email instead. After activating, you can replace the address with FormSubmit's random alias: set `data-endpoint="https://formsubmit.co/ajax/<alias>"` on the form.
 
+**News:** `news.html` lists every item in `assets/data/news.json` as a headline (date, type, headline, source), grouped by year, so older years form the archive. The Home page shows the 5 newest items from the past 12 months and hides the block when there are none. To add an item, put a new entry at the top of `news.json`: `date` (`YYYY-MM-DD`, or `YYYY-MM` if the day is unknown), `type` (`talk`, `grant`, `award`, `paper`, `media`, `people`, `event`, or `other`), a one-line `headline`, an optional `link` (LinkedIn post, article, or a page on this site), and an optional `source` label. Items arrive through the unlisted form below and are added by hand.
+
+**News submissions:** `news-submit.html` is an unlisted page (not linked anywhere, `noindex`) where lab members send one-line news items: type, date, headline, people, link, and notes for the editor. `assets/js/news-form.js` emails each one to the address in the form's `data-inbox` (the site editor) through FormSubmit, which needs the same one-time activation from that inbox. To keep the address out of the page source, replace `data-inbox` with FormSubmit's random alias in `data-endpoint`. Unlisted is not private: anyone with the link can open the page.
+
 ## Pages
 
 | File | Page |
@@ -123,6 +127,7 @@ The form on `contact.html` sends messages to **cs-patent@ua.edu** through [FormS
 | `people.html` | Team (rendered from `people.json`) |
 | `publications.html` | Searchable publications (rendered from `publications.json`) |
 | `funding.html` | Current and past awards (NSF records), the McKay endowment, sponsors |
+| `news.html` | Lab news headlines and yearly archive, from `news.json` |
 | `about.html` | History of the lab at MSU and UA, interdisciplinary scope |
 | `contact.html` | Contact details, contact form, and how to join |
 | `accessibility.html` | Accessibility statement and how to report problems |

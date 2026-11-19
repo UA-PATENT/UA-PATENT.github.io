@@ -1,0 +1,50 @@
+{
+ "note": "Lab news, shown as headlines on news.html (all items, grouped by year) and on the Home page (the 5 newest from the past 12 months). Add an item at the top: date as YYYY-MM-DD, or YYYY-MM when the day isn't known; type is one of talk, grant, award, paper, media, people, event, other (shown as Announcement); headline is one line; link is optional (a LinkedIn post, article, or page on this site); source is optional and replaces the label taken from the link. Don't copy publication entries here: a 'paper' item is a one-line 'accepted at' headline.",
+ "news": [
+  {
+   "date": "2026-11-19",
+   "type": "other",
+   "headline": "PATENT launches one website for its Alabama and Mississippi State teams",
+   "link": "about.html"
+  },
+  {
+   "date": "2026-11",
+   "type": "award",
+   "headline": "FALCON, which turns threat intelligence into deployable intrusion-detection rules, wins Best Paper at IEEE CIC 2026",
+   "link": "assets/docs/awards/cic-2026-best-paper-falcon.pdf",
+   "source": "IEEE CIC 2026 · San Jose"
+  },
+  {
+   "date": "2026-11",
+   "type": "award",
+   "headline": "Benchmark of spiking neural networks for intrusion detection wins Best Student Paper at IEEE CogMI 2026",
+   "link": "assets/docs/awards/cogmi-2026-best-student-paper-snn.pdf",
+   "source": "IEEE CogMI 2026 · San Jose"
+  },
+  {
+   "date": "2026-11",
+   "type": "award",
+   "headline": "Shortcut-learning study with Roma Tre University wins Best Student Paper at IEEE TPS 2026",
+   "link": "assets/docs/awards/tps-2026-best-student-paper-shortcut.pdf",
+   "source": "IEEE TPS 2026 · San Jose"
+  },
+  {
+   "date": "2026-08-13",
+   "type": "grant",
+   "headline": "NSF awards $749,874 for AI that understands how children engage with science-center exhibits",
+   "link": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2618127"
+  },
+  {
+   "date": "2026-08-04",
+   "type": "grant",
+   "headline": "NSF funds Project Nimbus, a collaboration with RIT on teaching security for multi-cloud machine learning",
+   "link": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2613873"
+  },
+  {
+   "date": "2026-02-25",
+   "type": "grant",
+   "headline": "NSF award on AI security threats to robotic systems continues at The University of Alabama",
+   "link": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2611682"
+  }
+ ]
+}

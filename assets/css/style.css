@@ -920,3 +920,24 @@ html:has(.toolbar) { scroll-padding-top: calc(var(--nav-h) + 140px); }
 .subnav a:hover { color: var(--accent); background: var(--accent-soft); }
 @media (max-width: 860px) { .nav__links a:hover { background: none !important; } }
 [data-theme="dark"] .nav__links a:hover, [data-theme="dark"] .nav__links a:focus-visible { background: rgba(244, 145, 159, .18); }
+
+/* ---------- News (news.html, Home "Latest news") ---------- */
+.news-list { list-style: none; margin: 0; padding: 0; display: grid; }
+.news-item { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 18px; padding: 16px 0; border-top: 1px solid var(--border); }
+.news-item:first-child { border-top: 0; }
+.news-item__date { font-family: var(--mono); font-size: .8rem; color: var(--muted); padding-top: 3px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.news-item__body { display: grid; gap: 4px; justify-items: start; min-width: 0; }
+.news-item__type { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.news-item__headline { font-size: 1.1rem; font-weight: 600; line-height: 1.38; color: var(--text); text-decoration: none; overflow-wrap: anywhere; }
+a.news-item__headline:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.news-item__source { font-size: .84rem; color: var(--muted); }
+.news-home { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+.news-home .section__head { margin-bottom: 0; }
+.news-home .section__head .link-arrow { margin-top: 22px; }
+.news-list--card { padding: 6px clamp(18px, 2.4vw, 28px); border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--border); }
+.news-list--card .news-item { grid-template-columns: 104px minmax(0, 1fr); }
+[data-news-page] .chips { margin-top: 8px; flex-wrap: wrap; }
+@media (max-width: 860px) { .news-home { grid-template-columns: 1fr; } }
+@media (max-width: 560px) {
+  .news-item, .news-list--card .news-item { grid-template-columns: 1fr; gap: 4px; }
+}
