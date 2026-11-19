@@ -1,6 +1,6 @@
-# PATENT Lab · The University of Alabama
+# PATENT Lab · The University of Alabama & Mississippi State University
 
-Website of the Predictive Analytics and Technology Integration Lab (PATENT), Department of Computer Science, The University of Alabama. Served by GitHub Pages from the `main` branch.
+Joint website of the Predictive Analytics and Technology Integration Lab (PATENT), a lab shared by the Department of Computer Science at The University of Alabama and the Department of Computer Science & Engineering at Mississippi State University. Served by GitHub Pages from the `main` branch.
 
 Plain HTML, CSS, and JavaScript. No build step and no dependencies.
 
@@ -142,7 +142,6 @@ Every page repeats the same navigation and footer. If you change one, update all
 - The research simulations live in `assets/js/sims.js`. Any element with `data-sim="security|healthcare|cps|vision|training"` gets a canvas. The SVG inside it is the fallback. `data-compact` hides the text overlays.
 - Motion follows the scroll position, using CSS scroll-driven animations where the browser supports them and a small JavaScript fallback elsewhere. It animates only `opacity` and `transform`.
 - If the visitor's system asks for reduced motion, all motion is turned off.
-- Lab at Mississippi State: <https://patent.cse.msstate.edu>
 
 ## Accessibility
 
